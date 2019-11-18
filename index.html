@@ -1,0 +1,826 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Рослек</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
+	<link rel="stylesheet" href="vendor/foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header_wrap">
+				<div class="top_header_content">
+					<div class="container">
+						<div class="top_header_inner">
+							<div class="header_top_menu">
+								<ul>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Как оформить заказ</a></li>
+									<li><a href="#">Адреса аптек</a></li>
+									<li><a href="#" data-toggle="dropdown_more">Информация <img src="img/arrow_bottom.svg" alt=""></a></li>
+								</ul>
+							</div>
+							<!-- выпадающие верхнее дополнительное меню -->
+							<div class="dropdown-pane dropdown_menu dropdown_menu_phone" id="dropdown_more" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+								<ul>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Пользовательское соглашение</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Обмен, возврат и ремонт</a></li>
+									<li><a href="#">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+
+							<div class="header_account_inner">
+								<ul>
+									<li><a href="#"><img src="img/plus.svg" alt=""> Мои бонусы</a></li>
+									<li><a href="#" data-toggle="header_join">Вход</a></li>
+									<li><a href="#" data-toggle="header_reg">Регистрация</a></li>
+								</ul>
+							</div>
+
+							<div class="dropdown-pane dropdown_menu dropdown_account" id="dropdown_account" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+								<ul>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Пользовательское соглашение</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Обмен, возврат и ремонт</a></li>
+									<li><a href="#">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+							<!-- авторизация выпадающее -->
+							<div class="dropdown-pane header_login_inner" id="header_join" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+								<div class="header_login_content">
+									<span>Авторизация</span>
+									<div class="header_login_input">
+										<input type="text" name="" value="" placeholder="Номер телефона">
+										<input type="password" name="" value="" placeholder="Пароль">
+										<input type="submit" name="" value="Войти">
+										<p data-toggle="header_reg">Еще нет аккаунта? <a href="#">Зарегистрируйтесь</a></p>
+										<a href="#" data-toggle="header_reg">Регистрация</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- регистрация выпадающее -->
+							<div class="dropdown-pane header_login_inner" id="header_reg" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+								<div class="header_login_content">
+									<span>Регистрация</span>
+									<div class="header_login_input">
+										<input type="text" name="" value="" placeholder="Фамилия">
+										<input type="text" name="" value="" placeholder="Имя">
+										<input type="text" name="" value="" placeholder="Отчество">
+										<input type="text" name="" value="" placeholder="Номер телефона">
+										<input type="text" name="" value="" placeholder="E-mail">
+										<input type="password" name="" value="" placeholder="Пароль">
+										<input type="password" name="" value="" placeholder="Повторите пароль">
+										<input type="submit" name="" value="Регистрация">
+										<p>Уже есть аккаунт? <a href="#">Авторизуйтесь</a></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="top_mobile_content">
+								<div class="mobile_logo">
+									<img src="img/logo_white.png" alt="">
+								</div>
+								<div class="header_log">
+									<a href="#" class="header_login red" data-toggle="header_join">
+										<div class="header_login_img">
+											<img src="img/login.png" alt="">
+										</div>
+										<span>Вход</span>
+									</a>
+									<span class="header_top_line">|</span>
+									<a href="#" class="header_reg red" data-toggle="header_reg">
+										<span>Регистрация</span>
+									</a>
+									<a href="#" class="burger_mobile" data-toggle="header_mobile">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container header_center">
+					<div class="top_center_inner">
+						<div class="logo">
+							<a href="#"><img src="img/logo.png" alt="Roslek"></a>
+						</div>
+
+						<div class="header_info_inner">
+							<div class="header_info">
+								<a href="#">
+									<div class="header_info_img">
+										<img src="img/top_phone.png" alt="">
+									</div>
+									<div class="header_info_desc">
+										<span>8 800 800-80-80 <img src="img/arrow_bottom.svg" alt=""></span>
+										<p>Заказать звонок</p>
+									</div>
+								</a>
+							</div>
+							<div class="header_info header_info_2">
+								<a href="#">
+									<div class="header_info_img">
+										<img src="img/top_city.png" alt="">
+									</div>
+									<div class="header_info_desc">
+										<span>Якутск <img src="img/arrow_bottom.svg" alt=""></span>
+										<p>Город</p>
+									</div>
+								</a>
+							</div>
+							<div class="header_info">
+								<a href="#">
+									<div class="header_info_img">
+										<img src="img/top_address.png" alt="">
+									</div>
+									<div class="header_info_desc">
+										<span>Дзержинского, 34 <img src="img/arrow_bottom.svg" alt=""></span>
+										<p>Адрес аптеки</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div><!--top header end-->
+
+				</div>
+				<div class="header_bottom">
+					<div class="container">
+						<div class="bottom_header_inner">
+
+							<div class="header_menu_inner">
+								<button data-toggle="catalog_menu"><img src="img/catalog.svg" alt=""><span>Каталог товаров</span><img src="img/catalog_arrow.svg" alt=""></button>
+								<div class="dropdown-pane catalog_menu has-position-bottom has-alignment-left is-open catalog_menu" id="catalog_menu">
+									<div class="catalog_menu_inner">
+										<ul>
+											<li>
+												<a href="#" data-toggle="catalog_menu_1">Лекарственные препараты</a>
+												<div class="dropdown-pane catalog_menu_under" id="catalog_menu_1" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+													<ul>
+														<li>
+															<a href="#">Беременным и кормящим</a>
+															<ul>
+																<li><a href="#">Бандажи до и послеродовые</a></li>
+																<li><a href="#">Белье до и послеродовые</a></li>
+																<li><a href="#">Вкладыши и прокладки</a></li>
+																<li><a href="#">Контейнеры для хранения молока</a></li>
+																<li><a href="#">Косметика и уход</a></li>
+																<li><a href="#">Молокоотсосы</a></li>
+																<li><a href="#">Питание для мам</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Детское питание</a>
+															<ul>
+																<li><a href="#">Вода</a></li>
+																<li><a href="#">Каши</a></li>
+																<li><a href="#">Смеси</a></li>
+																<li><a href="#">Соки и напитки</a></li>
+																<li><a href="#">Чай для малышей</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Детская гигиена и уход</a>
+															<ul>
+																<li><a href="#">Ежедневный уход</a></li>
+																<li><a href="#">Защитная косметика</a></li>
+																<li><a href="#">Присыпки для малышей</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Все для кормления детей</a>
+															<ul>
+																<li><a href="#">Бутылочки для кормления</a></li>
+																<li><a href="#">Нагрудники, слюнявчики</a></li>
+																<li><a href="#">Поильники</a></li>
+																<li><a href="#">Посуда для кормления</a></li>
+																<li><a href="#">Соски</a></li>
+																<li><a href="#">Термоконтейнеры</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Пустышки, прорезыватели и игрушки</a>
+														</li>
+														<li>
+															<a href="#">Для купания</a>
+															<ul>
+																<li><a href="#">Аксессуары для купания (горки, стульчики, термометры и т.д.)</a></li>
+																<li><a href="#">Средства для купания</a></li>
+																<li><a href="#">Шампуни для детей</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Подгузники и пеленки</a>
+															<ul>
+																<li><a href="#">Клеёнки</a></li>
+																<li><a href="#">Пеленки</a></li>
+																<li><a href="#">Подгузники</a></li>
+																<li><a href="#">Трусики</a></li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Прочие товары</a>
+															<ul>
+																<li><a href="#">Радионяни</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li><a href="#">БАД</a></li>
+											<li><a href="#">Медицинские изделия</a></li>
+											<li><a href="#">Медтехника</a></li>
+											<li><a href="#">Гигиена</a></li>
+											<li><a href="#">Мама и малыш</a></li>
+											<li><a href="#">Косметика</a></li>
+											<li><a href="#">Здоровое питание</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="header_search">
+								<form class="search_block" action="">
+									<input class="search_area" type="text" name="q" value="" autocomplete="off" placeholder="Поиск по каталогу">
+									<input type="submit" name="" value="">
+								</form>
+							</div>
+
+							<a href="#" class="header_cart">
+								<img src="img/cart.svg" alt="">
+								<span>2</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main_inner">
+			<section class="banner">
+				<div class="container">
+					<div class="banner_inner">
+						<div class="banner-left">
+
+						</div>
+						<div class="banner_right">
+							<div class="banner_big">
+								<img src="img/big_banner.jpg" alt="">
+							</div>
+							<div class="banner_small">
+								<div class="banner_small_img">
+									<img src="img/small_banner.jpg" alt="">
+								</div>
+								<div class="banner_small_img">
+									<img src="img/small_banner.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advan">
+				<div class="advan_inner">
+					<div class="advan_content">
+						<div class="advan_block">
+							<div class="advan_img">
+								<img src="img/advan_block_1.png" alt="">
+							</div>
+							<span>Удобная и быстрая доставка</span>
+						</div>
+						<div class="advan_block">
+							<div class="advan_img">
+								<img src="img/advan_block_2.png" alt="">
+							</div>
+							<span>Весь товар сертифицирован</span>
+						</div>
+						<div class="advan_block">
+							<div class="advan_img">
+								<img src="img/advan_block_3.png" alt="">
+							</div>
+							<span>30 дней на обмен и возврат</span>
+						</div>
+						<div class="advan_block">
+							<div class="advan_img">
+								<img src="img/advan_block_4.png" alt="">
+							</div>
+							<span>6 филиалов по всему городу</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main_catalog">
+				<div class="container">
+					<div class="main_catalog_inner">
+						<div class="section_title">
+							<h2>Популярные категории</h2>
+							<div class="title_line"></div>
+							<a href="#">Весь каталог</a>
+						</div>
+						<div class="main_catalog_content">
+							<div class="main_catalog_block">
+								<div class="main_catalog_block_content" style="background-image: url(img/main_category_1.png)">
+									<h3>Спутниковое ТВ</h3>
+									<span>Спутниковые тарелки, установочные комплекты, отдельные модули</span>
+									<a href="#"></a>
+								</div>
+							</div>
+							<div class="main_catalog_block">
+								<div class="main_catalog_block_content" style="background-image: url(img/main_category_2.png)">
+									<h3>Цифровое ТВ</h3>
+									<span>Спутниковые тарелки, установочные комплекты, отдельные модули</span>
+									<a href="#"></a>
+								</div>
+							</div>
+							<div class="main_catalog_block">
+								<div class="main_catalog_block_content" style="background-image: url(img/main_category_3.png)">
+									<h3>Другое оборудование</h3>
+									<span>Спутниковые тарелки, установочные комплекты, отдельные модули</span>
+									<a href="#"></a>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="news_url">Весь каталог</a>
+					</div>
+				</div>
+			</section>
+			<section class="service">
+				<div class="container">
+					<div class="section_title">
+						<h2>Популярные товары</h2>
+						<div class="title_line"></div>
+						<a href="#">Все популярные товары</a>
+					</div>
+				</div>
+				<div class="popular_tovar_inner">
+					<a href="#" id="arrow_left_2" class="slider_arrow_2 arrow_left"><img src="img/slider_arrow_left.png" alt=""></a>
+					<div class="popular_tovar_content">
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_sale">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" id="arrow_right_2" class="slider_arrow_2 arrow_right"><img src="img/slider_arrow_right.png" alt=""></a>
+				</div>
+			</section>
+			<section class="banner">
+				<img src="img/banner.png" alt="">
+			</section>
+			<section class="news">
+				<div class="container">
+					<div class="section_title">
+						<h2>Новости</h2>
+						<div class="title_line"></div>
+						<a href="#">Все новости</a>
+					</div>
+					<div class="news_inner">
+						<div class="news_block">
+							<div class="news_block_content">
+								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
+								<div class="news_block_desc">
+									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
+									<span>2 мая, 2019 - 12:19</span>
+								</div>
+							</div>
+						</div>
+						<div class="news_block">
+							<div class="news_block_content">
+								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
+								<div class="news_block_desc">
+									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
+									<span>2 мая, 2019 - 12:19</span>
+								</div>
+							</div>
+						</div>
+						<div class="news_block">
+							<div class="news_block_content">
+								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
+								<div class="news_block_desc">
+									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
+									<span>2 мая, 2019 - 12:19</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="news_url">Все новости</a>
+				</div>
+			</section>
+			<section class="shop">
+				<div class="container">
+					<div class="section_title">
+						<h2>Наши магазины</h2>
+						<div class="title_line"></div>
+						<a href="#">+ Еще 2 магазина на карте</a>
+					</div>
+					<div class="shop_inner">
+						<div class="shop_block">
+							<div class="shop_content">
+								<div class="shop_title">
+									<img class="margin_right_img" src="img/header_map.png" alt="">
+									<span>Октябрьская, 24</span>
+								</div>
+								<div class="shop_desc">
+									<div class="shop_desc_content">
+										<span>Телефон:</span>
+										<span>+7–924–177–00–00</span>
+									</div>
+									<div class="shop_desc_content">
+										<span>График:</span>
+										<span>Ежедневно <br>10:00 - 19:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shop_block">
+							<div class="shop_content">
+								<div class="shop_title">
+									<img class="margin_right_img" src="img/header_map.png" alt="">
+									<span>Октябрьская, 24</span>
+								</div>
+								<div class="shop_desc">
+									<div class="shop_desc_content">
+										<span>Телефон:</span>
+										<span>+7–924–177–00–00</span>
+									</div>
+									<div class="shop_desc_content">
+										<span>График:</span>
+										<span>Ежедневно <br>10:00 - 19:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shop_block">
+							<div class="shop_content">
+								<div class="shop_title">
+									<img class="margin_right_img" src="img/header_map.png" alt="">
+									<span>Октябрьская, 24</span>
+								</div>
+								<div class="shop_desc">
+									<div class="shop_desc_content">
+										<span>Телефон:</span>
+										<span>+7–924–177–00–00</span>
+									</div>
+									<div class="shop_desc_content">
+										<span>График:</span>
+										<span>Ежедневно <br>10:00 - 19:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="shop_block">
+							<div class="shop_content shop_more">
+								<div class="shop_more_img">
+									<img src="img/shop_more.png" alt="">
+								</div>
+								<div class="shop_more_desc">
+									Показать все магазины на карте
+								</div>
+								<a href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer_wrap">
+			<div class="footer_top">
+				<div class="container footer_top_content">
+					<div class="footer_social">
+						<span>Мы в соцсетях:</span>
+						<div class="footer_social_img">
+							<a href="#"><img src="img/instagram.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="footer_kassa" data-toggle="dropdown_bottom">
+						<img src="img/footer_phone.png" alt=""> +7 (924) 177-00-00 (Октябрьская, 24) <img src="img/footer_bottom_arrow.png" alt="">
+					</div>
+					<div class="dropdown-pane dropdown_footer_phone" id="dropdown_bottom" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+						<ul>
+							<li>+7 (924) 177-00-00 (Октябрьская, 24)</li>
+							<li>+7 (924) 177-00-00 (Октябрьская, 24)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer_inner">
+				<div class="container">
+					<div class="footer_inner_content">
+						<div class="footer_block">
+							<ul class="footer_bottom_menu menu vertical" id="footer_menu" data-responsive-menu="small-accordion">
+								<li class="has-submenu">
+									<a href="#" class="submenu_title">Каталог товаров</a>
+									<ul>
+										<li><a href="#" aria-label="">Оборудование для дома</a></li>
+										<li><a href="#" aria-label="">Портативные радиостанции</a></li>
+										<li><a href="#" aria-label="">Комплекты спутникового интернета</a></li>
+										<li><a href="#" aria-label="">Для авто</a></li>
+										<li><a href="#" aria-label="">Доп. оборудование</a></li>
+										<li><a href="#" aria-label="">Кабеля и переходники</a></li>
+										<li><a href="#" aria-label="">Спутниковое ТВ</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<ul class="footer_bottom_menu menu vertical" data-responsive-menu="small-accordion">
+								<li class="has-submenu">
+									<a href="#" class="submenu_title">Услуги</a>
+									<ul>
+										<li><a href="#">Установка</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<ul class="footer_bottom_menu menu vertical" data-responsive-menu="small-accordion">
+								<li class="has-submenu">
+									<a href="#" class="submenu_title">О компании</a>
+									<ul>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Вакансии</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Магазины</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<ul class="footer_bottom_menu menu vertical" data-responsive-menu="small-accordion">
+								<li class="has-submenu">
+									<a href="#" class="submenu_title">Покупателям</a>
+									<ul>
+										<li><a href="#">Доставка</a></li>
+										<li><a href="#">Оплата</a></li>
+										<li><a href="#">Обмен, возврат и ремонт</a></li>
+										<li><a href="#">Пользовательское соглашение</a></li>
+										<li><a href="#">Политика конфиденциальности</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<div class="container footer_copyright_content">
+					<div class="footer_footer_copyright_top">
+						<div class="footer_map">
+							<a href="#" class="footer_map_text_1"><img src="img/map.png" alt=""> Карта сайта</a>
+						</div>
+						<div class="footer_search">
+							<form class="footer_search_form" action="index.html" method="post">
+								<input type="search" class="footer_search" name="q" placeholder="Поиск на сайте...">
+								<div class="search"></div>
+							</form>
+						</div>
+					</div>
+					<div class="footer_copyright_bottom">
+						<span>© 2019 Мир Антенн</span>
+						<div class="footer_copyright_bottom_block">
+							<span>Дизайн и разработка </span>
+							<a href="http://platforma.bz"><img src="img/platforma.png" alt="Разработка сайтов"></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="vendor/foundation/js/vendor/jquery.js"></script>
+		<script src="vendor/foundation/js/vendor/what-input.js"></script>
+		<script src="vendor/foundation/js/vendor/foundation.js"></script>
+		<script src="vendor/foundation/js/app.js"></script>
+		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+		<script src="vendor/main.js"></script>
+		<script type="text/javascript">
+		$('.slider_content').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			centerMode: true,
+			focusOnSelect: true,
+			arrows: true,
+			dots: true,
+			variableWidth: true,
+      variableHeight: true,
+			prevArrow: $('#arrow_left_1'),
+			nextArrow: $('#arrow_right_1'),
+			responsive: [
+				{
+		      breakpoint: 820,
+		      settings: {
+						slidesToShow: 3,
+						centerMode: false,
+		        slidesToScroll: 1,
+		      }
+		    },
+		    {
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+						dots: false,
+		      }
+		    }
+		  ]
+	  });
+		$(window).on('load resize', function() {
+				if ($(window).width() < 820) {
+					$('.news_inner').slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						centerMode: true,
+						focusOnSelect: true,
+						infinite: false,
+						arrows: false,
+						dots: false,
+						variableWidth: true,
+			      variableHeight: true,
+						responsive: [
+							{
+								breakpoint: 568,
+								settings: {
+									centerMode: false,
+								}
+							}
+						]
+				  });
+				} else {
+					$('.footer_bottom_menu ul').css( "display", "block" );
+					$('.footer_bottom_menu').removeClass('accordion-menu');
+					$( ".footer_bottom_menu" ).removeAttr( "data-accordion-menu" );
+					$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
+				}
+		});
+		$('.popular_tovar_content').slick({
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			infinite: true,
+			centerMode: false,
+			focusOnSelect: true,
+			arrows: true,
+			dots: false,
+			variableWidth: true,
+      variableHeight: true,
+			prevArrow: $('#arrow_left_2'),
+			nextArrow: $('#arrow_right_2'),
+			responsive: [
+		    {
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+						dots: false,
+		      }
+		    }
+		  ]
+	  });
+	  jQuery(function($){
+			$("#phone").mask("+7 (999) 999-9999");
+		});
+		$('#header_catalog_menu').on('show.zf.dropdown', function() {
+		  $('.main_inner').addClass('shadow');
+		});
+		$('#header_catalog_menu').on('hide.zf.dropdown', function() {
+		  $('.main_inner').removeClass('shadow');
+		});
+		</script>
+	</div>
+</body>
+
+</html>
