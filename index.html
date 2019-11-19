@@ -29,7 +29,7 @@
 								</ul>
 							</div>
 							<!-- выпадающие верхнее дополнительное меню -->
-							<div class="dropdown-pane dropdown_menu dropdown_menu_phone" id="dropdown_more" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+							<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="dropdown_more" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
 								<ul>
 									<li><a href="#">Новости</a></li>
 									<li><a href="#">О компании</a></li>
@@ -46,46 +46,54 @@
 									<li><a href="#" data-toggle="header_join">Вход</a></li>
 									<li><a href="#" data-toggle="header_reg">Регистрация</a></li>
 								</ul>
-							</div>
-
-							<div class="dropdown-pane dropdown_menu dropdown_account" id="dropdown_account" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
-								<ul>
-									<li><a href="#">Новости</a></li>
-									<li><a href="#">О компании</a></li>
-									<li><a href="#">Пользовательское соглашение</a></li>
-									<li><a href="#">Вакансии</a></li>
-									<li><a href="#">Обмен, возврат и ремонт</a></li>
-									<li><a href="#">Политика конфиденциальности</a></li>
-								</ul>
-							</div>
-							<!-- авторизация выпадающее -->
-							<div class="dropdown-pane header_login_inner" id="header_join" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
-								<div class="header_login_content">
-									<span>Авторизация</span>
-									<div class="header_login_input">
-										<input type="text" name="" value="" placeholder="Номер телефона">
-										<input type="password" name="" value="" placeholder="Пароль">
-										<input type="submit" name="" value="Войти">
-										<p data-toggle="header_reg">Еще нет аккаунта? <a href="#">Зарегистрируйтесь</a></p>
-										<a href="#" data-toggle="header_reg">Регистрация</a>
+								<!-- авторизация выпадающее -->
+								<div class="dropdown-pane dropdown_login" id="header_join" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<div class="dropdown_login_content">
+										<h3>Авторизация</h3>
+										<div class="dropdown_login_input">
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Номер телефона">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="password" name="" value="" placeholder="Пароль">
+												<a href="#">Забыли пароль?</a>
+											</div>
+											<input type="submit" name="" value="Войти">
+											<p>Еще нет аккаунта? <a href="#" data-toggle="header_reg">Зарегистрируйтесь</a></p>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<!-- регистрация выпадающее -->
-							<div class="dropdown-pane header_login_inner" id="header_reg" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
-								<div class="header_login_content">
-									<span>Регистрация</span>
-									<div class="header_login_input">
-										<input type="text" name="" value="" placeholder="Фамилия">
-										<input type="text" name="" value="" placeholder="Имя">
-										<input type="text" name="" value="" placeholder="Отчество">
-										<input type="text" name="" value="" placeholder="Номер телефона">
-										<input type="text" name="" value="" placeholder="E-mail">
-										<input type="password" name="" value="" placeholder="Пароль">
-										<input type="password" name="" value="" placeholder="Повторите пароль">
-										<input type="submit" name="" value="Регистрация">
-										<p>Уже есть аккаунт? <a href="#">Авторизуйтесь</a></p>
+								<!-- регистрация выпадающее -->
+								<div class="dropdown-pane dropdown_reg" id="header_reg" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<div class="dropdown_login_content">
+										<h3>Регистрация</h3>
+										<div class="dropdown_login_input">
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Фамилия">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Имя">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Отчество">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Номер телефона">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="E-mail">
+												<a href="#">Необязательно</a>
+											</div>
+											<div class="dropdown_login_block">
+												<input type="password" name="" value="" placeholder="Пароль">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="password" name="" value="" placeholder="Повторите пароль">
+											</div>
+											<input type="submit" name="" value="Войти">
+											<p>Уже есть аккаунт? <a href="#" data-toggle="header_join">Авторизуйтесь</a></p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -121,7 +129,7 @@
 
 						<div class="header_info_inner">
 							<div class="header_info">
-								<a href="#">
+								<a href="#" data-toggle="header_phone">
 									<div class="header_info_img">
 										<img src="img/top_phone.png" alt="">
 									</div>
@@ -130,9 +138,18 @@
 										<p>Заказать звонок</p>
 									</div>
 								</a>
+								<!-- выпадающие номер телефона -->
+								<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="header_phone" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<ul>
+										<li><a href="#">8 800 800-80-80</a></li>
+										<li><a href="#">8 800 800-80-80</a></li>
+										<li><a href="#">8 800 800-80-80</a></li>
+									</ul>
+								</div>
+
 							</div>
 							<div class="header_info header_info_2">
-								<a href="#">
+								<a href="#" data-toggle="header_city">
 									<div class="header_info_img">
 										<img src="img/top_city.png" alt="">
 									</div>
@@ -141,9 +158,18 @@
 										<p>Город</p>
 									</div>
 								</a>
+								<!-- выпадающие города -->
+								<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="header_city" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<ul>
+										<li><a href="#">Якутск</a></li>
+										<li><a href="#">Якутск</a></li>
+										<li><a href="#">Якутск</a></li>
+									</ul>
+								</div>
+
 							</div>
 							<div class="header_info">
-								<a href="#">
+								<a href="#" data-toggle="header_address">
 									<div class="header_info_img">
 										<img src="img/top_address.png" alt="">
 									</div>
@@ -152,6 +178,15 @@
 										<p>Адрес аптеки</p>
 									</div>
 								</a>
+								<!-- выпадающие города -->
+								<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="header_address" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<ul>
+										<li><a href="#">Орджоникидзе, 2</a></li>
+										<li><a href="#">Петра Алексеева 72/1</a></li>
+										<li><a href="#">Дзержинского, 34</a></li>
+									</ul>
+								</div>
+
 							</div>
 						</div>
 					</div><!--top header end-->
@@ -291,327 +326,238 @@
 					</div>
 				</div>
 			</section>
-			<section class="advan">
-				<div class="advan_inner">
-					<div class="advan_content">
-						<div class="advan_block">
-							<div class="advan_img">
-								<img src="img/advan_block_1.png" alt="">
-							</div>
-							<span>Удобная и быстрая доставка</span>
-						</div>
-						<div class="advan_block">
-							<div class="advan_img">
-								<img src="img/advan_block_2.png" alt="">
-							</div>
-							<span>Весь товар сертифицирован</span>
-						</div>
-						<div class="advan_block">
-							<div class="advan_img">
-								<img src="img/advan_block_3.png" alt="">
-							</div>
-							<span>30 дней на обмен и возврат</span>
-						</div>
-						<div class="advan_block">
-							<div class="advan_img">
-								<img src="img/advan_block_4.png" alt="">
-							</div>
-							<span>6 филиалов по всему городу</span>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="main_catalog">
-				<div class="container">
-					<div class="main_catalog_inner">
-						<div class="section_title">
-							<h2>Популярные категории</h2>
-							<div class="title_line"></div>
-							<a href="#">Весь каталог</a>
-						</div>
-						<div class="main_catalog_content">
-							<div class="main_catalog_block">
-								<div class="main_catalog_block_content" style="background-image: url(img/main_category_1.png)">
-									<h3>Спутниковое ТВ</h3>
-									<span>Спутниковые тарелки, установочные комплекты, отдельные модули</span>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="main_catalog_block">
-								<div class="main_catalog_block_content" style="background-image: url(img/main_category_2.png)">
-									<h3>Цифровое ТВ</h3>
-									<span>Спутниковые тарелки, установочные комплекты, отдельные модули</span>
-									<a href="#"></a>
-								</div>
-							</div>
-							<div class="main_catalog_block">
-								<div class="main_catalog_block_content" style="background-image: url(img/main_category_3.png)">
-									<h3>Другое оборудование</h3>
-									<span>Спутниковые тарелки, установочные комплекты, отдельные модули</span>
-									<a href="#"></a>
-								</div>
-							</div>
-						</div>
-						<a href="#" class="news_url">Весь каталог</a>
-					</div>
-				</div>
-			</section>
-			<section class="service">
+			<section class="popular section">
 				<div class="container">
 					<div class="section_title">
 						<h2>Популярные товары</h2>
-						<div class="title_line"></div>
-						<a href="#">Все популярные товары</a>
-					</div>
-				</div>
-				<div class="popular_tovar_inner">
-					<a href="#" id="arrow_left_2" class="slider_arrow_2 arrow_left"><img src="img/slider_arrow_left.png" alt=""></a>
-					<div class="popular_tovar_content">
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
-						</div>
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
-						</div>
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
-						</div>
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
-						</div>
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
-						</div>
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
-						</div>
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
-						</div>
-						<div class="popular_tovar_block">
-							<div class="catalog_element_content">
-								<div class="catalog_element_sale">
-									<span>-20%</span>
-								</div>
-								<a href="#" class="catalog_element_img">
-									<img src="img/tovar_1.png" alt="">
-								</a>
-								<a href="#" class="catalog_element_cat">Приемники</a>
-								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
-								<div class="catalog_element_price_inner">
-									<span class="catalog_element_price">1 499 ₽</span>
-									<span class="catalog_element_price_not">1 899 ₽</span>
-								</div>
-							</div>
+						<div class="slider_arrow">
+							<button type="button" id="arrow_left_1">
+								<img src="img/arrow_left.svg" alt="">
+							</button>
+							<button type="button" id="arrow_right_1">
+								<img src="img/arrow_right.svg" alt="">
+							</button>
 						</div>
 					</div>
-					<a href="#" id="arrow_right_2" class="slider_arrow_2 arrow_right"><img src="img/slider_arrow_right.png" alt=""></a>
-				</div>
-			</section>
-			<section class="banner">
-				<img src="img/banner.png" alt="">
-			</section>
-			<section class="news">
-				<div class="container">
-					<div class="section_title">
-						<h2>Новости</h2>
-						<div class="title_line"></div>
-						<a href="#">Все новости</a>
-					</div>
-					<div class="news_inner">
-						<div class="news_block">
-							<div class="news_block_content">
-								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
-								<div class="news_block_desc">
-									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
-									<span>2 мая, 2019 - 12:19</span>
+					<div class="container_row popular_slider">
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_1">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_1" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
+								</div>
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>319</span>
+										<span class="price_delete"></span>
+									</div>
+									<button type="button"></button>
 								</div>
 							</div>
 						</div>
-						<div class="news_block">
-							<div class="news_block_content">
-								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
-								<div class="news_block_desc">
-									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
-									<span>2 мая, 2019 - 12:19</span>
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_2">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_2" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
+								</div>
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>319</span>
+										<span class="price_delete"></span>
+									</div>
+									<button type="button"></button>
 								</div>
 							</div>
 						</div>
-						<div class="news_block">
-							<div class="news_block_content">
-								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
-								<div class="news_block_desc">
-									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
-									<span>2 мая, 2019 - 12:19</span>
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<div class="tovar_meta">
+										<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+										<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+									</div>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_3">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_3" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
+								</div>
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>1 522 ₽</span>
+										<span class="price_delete">1 922 ₽</span>
+									</div>
+									<button type="button"></button>
 								</div>
 							</div>
 						</div>
-					</div>
-					<a href="#" class="news_url">Все новости</a>
-				</div>
-			</section>
-			<section class="shop">
-				<div class="container">
-					<div class="section_title">
-						<h2>Наши магазины</h2>
-						<div class="title_line"></div>
-						<a href="#">+ Еще 2 магазина на карте</a>
-					</div>
-					<div class="shop_inner">
-						<div class="shop_block">
-							<div class="shop_content">
-								<div class="shop_title">
-									<img class="margin_right_img" src="img/header_map.png" alt="">
-									<span>Октябрьская, 24</span>
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_4">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_4" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
 								</div>
-								<div class="shop_desc">
-									<div class="shop_desc_content">
-										<span>Телефон:</span>
-										<span>+7–924–177–00–00</span>
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>319</span>
+										<span class="price_delete"></span>
 									</div>
-									<div class="shop_desc_content">
-										<span>График:</span>
-										<span>Ежедневно <br>10:00 - 19:00</span>
-									</div>
+									<button type="button"></button>
 								</div>
 							</div>
 						</div>
-						<div class="shop_block">
-							<div class="shop_content">
-								<div class="shop_title">
-									<img class="margin_right_img" src="img/header_map.png" alt="">
-									<span>Октябрьская, 24</span>
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<div class="tovar_meta">
+										<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+										<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+									</div>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_5">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_5" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
 								</div>
-								<div class="shop_desc">
-									<div class="shop_desc_content">
-										<span>Телефон:</span>
-										<span>+7–924–177–00–00</span>
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>1 522 ₽</span>
+										<span class="price_delete">1 922 ₽</span>
 									</div>
-									<div class="shop_desc_content">
-										<span>График:</span>
-										<span>Ежедневно <br>10:00 - 19:00</span>
-									</div>
+									<button type="button"></button>
 								</div>
 							</div>
 						</div>
-						<div class="shop_block">
-							<div class="shop_content">
-								<div class="shop_title">
-									<img class="margin_right_img" src="img/header_map.png" alt="">
-									<span>Октябрьская, 24</span>
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_6">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_6" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
 								</div>
-								<div class="shop_desc">
-									<div class="shop_desc_content">
-										<span>Телефон:</span>
-										<span>+7–924–177–00–00</span>
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>319</span>
+										<span class="price_delete"></span>
 									</div>
-									<div class="shop_desc_content">
-										<span>График:</span>
-										<span>Ежедневно <br>10:00 - 19:00</span>
-									</div>
+									<button type="button"></button>
 								</div>
 							</div>
 						</div>
-						<div class="shop_block">
-							<div class="shop_content shop_more">
-								<div class="shop_more_img">
-									<img src="img/shop_more.png" alt="">
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<div class="tovar_meta">
+										<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+										<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+									</div>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_7">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_7" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
 								</div>
-								<div class="shop_more_desc">
-									Показать все магазины на карте
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>1 522 ₽</span>
+										<span class="price_delete">1 922 ₽</span>
+									</div>
+									<button type="button"></button>
 								</div>
-								<a href="#"></a>
+							</div>
+						</div>
+						<div class="container_block">
+							<div class="tovar_content">
+								<div class="tovar_top">
+									<span class="tovar_brend">Аванта ОАО</span>
+									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+									<button class="tovar_apteka notselected" type="button" data-toggle="apteka_8">Выберите аптеку</button>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_8" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+										<ul>
+											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+											<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+											<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+										</ul>
+									</div>
+									<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+									<span class="tovar_cat">Крем</span>
+								</div>
+								<div class="tovar_bot">
+									<div class="tovar_price">
+										<span>319</span>
+										<span class="price_delete"></span>
+									</div>
+									<button type="button"></button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -729,26 +675,18 @@
 		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 		<script src="vendor/main.js"></script>
 		<script type="text/javascript">
-		$('.slider_content').slick({
-			slidesToShow: 3,
+		$(".popular_slider").slick({
+			slidesToShow: 4,
 			slidesToScroll: 1,
-			centerMode: true,
-			focusOnSelect: true,
+			infinite: true,
+			centerMode: false,
+			focusOnSelect: false,
 			arrows: true,
-			dots: true,
-			variableWidth: true,
-      variableHeight: true,
+			dots: false,
+			swipe: false,
 			prevArrow: $('#arrow_left_1'),
 			nextArrow: $('#arrow_right_1'),
 			responsive: [
-				{
-		      breakpoint: 820,
-		      settings: {
-						slidesToShow: 3,
-						centerMode: false,
-		        slidesToScroll: 1,
-		      }
-		    },
 		    {
 		      breakpoint: 568,
 		      settings: {
@@ -759,65 +697,39 @@
 		    }
 		  ]
 	  });
+		// выбор аптеки в товарах
+		$(".apteka_name").on("click", function() {
+			var p = $(this).text();
+			var tovar = $(this).parents(".tovar_top");
+			$(tovar).find(".tovar_apteka").text(p);
+			$(tovar).find(".tovar_apteka").addClass("changed");
+			$(tovar).find(".dropdown_apteka").removeClass("is-open");
+			$(tovar).find(".tovar_apteka").removeClass("notselected");
+		});
+
+		// анимация при нажатии корзины в товарах
+		$(".tovar_bot button").on("click", function(){
+			var tovar = $(this).parents(".tovar_content");
+			if ($(tovar).find(".tovar_apteka").hasClass("notselected")) {
+				$(tovar).find(".tovar_apteka").addClass("alert");
+			} else {
+				$(this).addClass("loading").delay(800).queue(function(next){
+			    $(this).removeClass("loading");
+					$(this).addClass("added");
+			    next();
+				});
+			}
+		});
+
 		$(window).on('load resize', function() {
 				if ($(window).width() < 820) {
-					$('.news_inner').slick({
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						centerMode: true,
-						focusOnSelect: true,
-						infinite: false,
-						arrows: false,
-						dots: false,
-						variableWidth: true,
-			      variableHeight: true,
-						responsive: [
-							{
-								breakpoint: 568,
-								settings: {
-									centerMode: false,
-								}
-							}
-						]
-				  });
+
 				} else {
 					$('.footer_bottom_menu ul').css( "display", "block" );
 					$('.footer_bottom_menu').removeClass('accordion-menu');
 					$( ".footer_bottom_menu" ).removeAttr( "data-accordion-menu" );
 					$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
 				}
-		});
-		$('.popular_tovar_content').slick({
-			slidesToShow: 6,
-			slidesToScroll: 1,
-			infinite: true,
-			centerMode: false,
-			focusOnSelect: true,
-			arrows: true,
-			dots: false,
-			variableWidth: true,
-      variableHeight: true,
-			prevArrow: $('#arrow_left_2'),
-			nextArrow: $('#arrow_right_2'),
-			responsive: [
-		    {
-		      breakpoint: 568,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1,
-						dots: false,
-		      }
-		    }
-		  ]
-	  });
-	  jQuery(function($){
-			$("#phone").mask("+7 (999) 999-9999");
-		});
-		$('#header_catalog_menu').on('show.zf.dropdown', function() {
-		  $('.main_inner').addClass('shadow');
-		});
-		$('#header_catalog_menu').on('hide.zf.dropdown', function() {
-		  $('.main_inner').removeClass('shadow');
 		});
 		</script>
 	</div>
