@@ -196,6 +196,14 @@
 					<div class="container">
 						<div class="bottom_header_inner">
 
+							<!-- мобильный header -->
+							<div class="mobile_header">
+								<button class="mobile_burger" type="button" name="button"></button>
+								<div class="mobile_logo">
+									<img src="img/mobile_logo.png" alt="">
+								</div>
+								<button class="mobile_loop" type="button" name="button"></button>
+							</div>
 							<div class="header_menu_inner">
 								<button data-toggle="catalog_menu"><img src="img/catalog.svg" alt=""><span>Каталог товаров</span><img src="img/catalog_arrow.svg" alt=""></button>
 								<div class="dropdown-pane dropdown_menu_panel is-open" id="catalog_menu" data-dropdown data-auto-focus="false" data-force-follow="false" data-close-on-click-inside="false">
@@ -927,6 +935,18 @@
 		        slidesToShow: 3,
 		      }
 		    },
+				{
+		      breakpoint: 800,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+				{
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    },
 		  ]
 	  });
 		$(".top_slider").slick({
@@ -947,22 +967,34 @@
 		        slidesToShow: 3,
 		      }
 		    },
+				{
+		      breakpoint: 800,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+				{
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    },
 		  ]
 	  });
 
 		$(window).on('load resize', function() {
-				if ($(window).width() < 1060) {
-					$(".dropdown_menu_panel").removeClass("is-open");
-					$(".dropdown_menu_panel").addClass("dropdown-pane");
-				} else {
-					$(".dropdown_menu_panel").removeClass("dropdown-pane");
-					$(".dropdown_menu_panel").addClass("dropdown");
-					$(".catalog_menu").addClass("is-open");
-					$('.footer_bottom_menu ul').css( "display", "block" );
-					$('.footer_bottom_menu').removeClass('accordion-menu');
-					$( ".footer_bottom_menu" ).removeAttr( "data-accordion-menu" );
-					$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
-				}
+			if ($(window).width() < 1060) {
+				$(".dropdown_menu_panel").removeClass("is-open");
+				$(".dropdown_menu_panel").addClass("dropdown-pane");
+			} else {
+				$(".dropdown_menu_panel").removeClass("dropdown-pane");
+				$(".dropdown_menu_panel").addClass("dropdown");
+				$(".catalog_menu").addClass("is-open");
+				$('.footer_bottom_menu ul').css( "display", "block" );
+				$('.footer_bottom_menu').removeClass('accordion-menu');
+				$( ".footer_bottom_menu" ).removeAttr( "data-accordion-menu" );
+				$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
+			}
 		});
 		</script>
 	</div>
