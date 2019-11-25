@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
-	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+	<link rel="stylesheet" href="vendor/owl/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -99,9 +99,9 @@
 							</div>
 
 							<div class="top_mobile_content">
-								<div class="mobile_logo">
+								<a href="" class="mobile_logo">
 									<img src="img/logo_white.png" alt="">
-								</div>
+								</a>
 								<div class="header_log">
 									<a href="#" class="header_login red" data-toggle="header_join">
 										<div class="header_login_img">
@@ -199,9 +199,9 @@
 							<!-- мобильный header -->
 							<div class="mobile_header">
 								<button class="mobile_burger" type="button" name="button"></button>
-								<div class="mobile_logo">
+								<a href="#" class="mobile_logo">
 									<img src="img/mobile_logo.png" alt="">
-								</div>
+								</a>
 								<button class="mobile_loop" type="button" name="button"></button>
 							</div>
 							<div class="header_menu_inner">
@@ -355,23 +355,15 @@
 				<div class="container">
 					<div class="section_title">
 						<h2>Популярные товары</h2>
-						<div class="slider_arrow">
-							<button type="button" id="arrow_left_1">
-								<img src="img/arrow_left.svg" alt="">
-							</button>
-							<button type="button" id="arrow_right_1">
-								<img src="img/arrow_right.svg" alt="">
-							</button>
-						</div>
 					</div>
-					<div class="container_row popular_slider">
+					<div class="container_row popular_slider owl-carousel owl-theme">
 						<div class="container_block">
 							<div class="tovar_content">
 								<div class="tovar_top">
 									<span class="tovar_brend">Аванта ОАО</span>
 									<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
 									<button class="tovar_apteka notselected" data-toggle="apteka_1">Выберите аптеку</button>
-									<div class="dropdown-pane dropdown_apteka" id="apteka_1" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+									<div class="dropdown-pane dropdown_apteka" id="apteka_1" data-dropdown data-auto-focus="true"  data-close-on-click-inside="false">
 										<ul>
 											<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
 											<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
@@ -592,16 +584,8 @@
 				<div class="container">
 					<div class="section_title">
 						<h2>Товары дня</h2>
-						<div class="slider_arrow">
-							<button type="button" id="arrow_left_2">
-								<img src="img/arrow_left.svg" alt="">
-							</button>
-							<button type="button" id="arrow_right_2">
-								<img src="img/arrow_right.svg" alt="">
-							</button>
-						</div>
 					</div>
-					<div class="container_row top_slider">
+					<div class="container_row top_slider owl-carousel owl-theme">
 						<div class="container_block">
 							<div class="tovar_content">
 								<div class="tovar_top">
@@ -890,98 +874,9 @@
 		<script src="vendor/foundation/js/vendor/what-input.js"></script>
 		<script src="vendor/foundation/js/vendor/foundation.js"></script>
 		<script src="vendor/foundation/js/app.js"></script>
-		<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+		<script src="vendor/owl/owl.carousel.min.js"></script>
 		<script src="vendor/main.js"></script>
 		<script type="text/javascript">
-
-		// выбор аптеки в товарах
-		$(".apteka_name").on("click", function() {
-			var p = $(this).text();
-			var tovar = $(this).parents(".tovar_top");
-			$(tovar).find(".tovar_apteka").text(p);
-			$(tovar).find(".tovar_apteka").addClass("changed");
-			$(tovar).find(".dropdown_apteka").removeClass("is-open");
-			$(tovar).find(".tovar_apteka").removeClass("notselected");
-		});
-
-		// анимация при нажатии корзины в товарах
-		$(".tovar_bot button").on("click", function(){
-			var tovar = $(this).parents(".tovar_content");
-			if ($(tovar).find(".tovar_apteka").hasClass("notselected")) {
-				$(tovar).find(".tovar_apteka").addClass("alert");
-			} else {
-				$(this).addClass("loading").delay(800).queue(function(next){
-			    $(this).removeClass("loading");
-					$(this).addClass("added");
-			    next();
-				});
-			}
-		});
-		$(".popular_slider").slick({
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			infinite: true,
-			centerMode: false,
-			focusOnSelect: false,
-			arrows: true,
-			dots: false,
-			swipe: false,
-			prevArrow: $('#arrow_left_1'),
-			nextArrow: $('#arrow_right_1'),
-			responsive: [
-		    {
-		      breakpoint: 1060,
-		      settings: {
-		        slidesToShow: 3,
-		      }
-		    },
-				{
-		      breakpoint: 800,
-		      settings: {
-		        slidesToShow: 2,
-		      }
-		    },
-				{
-		      breakpoint: 568,
-		      settings: {
-		        slidesToShow: 1,
-		      }
-		    },
-		  ]
-	  });
-		$(".top_slider").slick({
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			infinite: true,
-			centerMode: false,
-			focusOnSelect: false,
-			arrows: true,
-			dots: false,
-			swipe: false,
-			prevArrow: $('#arrow_left_2'),
-			nextArrow: $('#arrow_right_2'),
-			responsive: [
-		    {
-					breakpoint: 1060,
-		      settings: {
-		        slidesToShow: 3,
-		      }
-		    },
-				{
-		      breakpoint: 800,
-		      settings: {
-		        slidesToShow: 2,
-		      }
-		    },
-				{
-		      breakpoint: 568,
-		      settings: {
-		        slidesToShow: 1,
-		      }
-		    },
-		  ]
-	  });
-
 		$(window).on('load resize', function() {
 			if ($(window).width() < 1060) {
 				$(".dropdown_menu_panel").removeClass("is-open");
@@ -990,11 +885,86 @@
 				$(".dropdown_menu_panel").removeClass("dropdown-pane");
 				$(".dropdown_menu_panel").addClass("dropdown");
 				$(".catalog_menu").addClass("is-open");
-				$('.footer_bottom_menu ul').css( "display", "block" );
+				$('.footer_bottom_menu ul').css( "display", "flex" );
 				$('.footer_bottom_menu').removeClass('accordion-menu');
 				$( ".footer_bottom_menu" ).removeAttr( "data-accordion-menu" );
 				$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
 			}
+		});
+		$(document).ready(function(){
+			// выбор аптеки в товарах
+			$(".apteka_name").on("click", function() {
+				var p = $(this).text();
+				var tovar = $(this).parents(".tovar_top");
+				$(tovar).find(".tovar_apteka").text(p);
+				$(tovar).find(".tovar_apteka").addClass("changed");
+				$(tovar).find(".dropdown_apteka").removeClass("is-open");
+				$(tovar).find(".tovar_apteka").removeClass("notselected");
+			});
+
+			// анимация при нажатии корзины в товарах
+			$(".tovar_bot button").on("click", function(){
+				var tovar = $(this).parents(".tovar_content");
+				if ($(tovar).find(".tovar_apteka").hasClass("notselected")) {
+					$(tovar).find(".tovar_apteka").addClass("alert");
+				} else {
+					$(this).addClass("loading").delay(800).queue(function(next){
+				    $(this).removeClass("loading");
+						$(this).addClass("added");
+				    next();
+					});
+				}
+			});
+
+
+			$('.popular_slider').owlCarousel({
+			    nav:true,
+					navText:["<button type='button'><img src='img/arrow_left.svg'></button>","<button type='button'><img src='img/arrow_right.svg'></button>"],
+					touchDrag: false,
+					item: 4,
+					mouseDrag: false,
+			    responsive:{
+							420:{
+									items:1
+							},
+							568:{
+									items:1
+							},
+			        620:{
+			            items:2
+			        },
+			        1060:{
+			            items:3
+			        },
+							1200:{
+			            items:4
+			        }
+			    }
+			});
+			$('.top_slider').owlCarousel({
+			    nav:true,
+					item: 4,
+					navText:["<button type='button'><img src='img/arrow_left.svg'></button>","<button type='button'><img src='img/arrow_right.svg'></button>"],
+					touchDrag: false,
+					mouseDrag: false,
+			    responsive:{
+							420:{
+									items:1
+							},
+							568:{
+									items:1
+							},
+			        620:{
+			            items:2
+			        },
+			        1060:{
+			            items:3
+			        },
+							1200:{
+			            items:4
+			        }
+			    }
+			});
 		});
 		</script>
 	</div>
