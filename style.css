@@ -258,6 +258,16 @@ a:hover {
   border: none;
   padding: 0;
 }
+.shadow::after {
+	content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  top: 50px;
+  z-index: 11;
+}
 .dropdown_login_content h3 {
 	font-size: 14px;
 	font-weight: normal;
@@ -369,6 +379,7 @@ a:hover {
 	width: 100%;
 	box-shadow: none;
 	position: absolute;
+	z-index: 1;
 }
 .catalog_menu_inner > li > a {
 	padding-left: 24px;
@@ -402,8 +413,8 @@ a:hover {
 	position: inherit!important;
 }
 .main_inner {
-	background: #E5E5E5;
-	padding-bottom: 64px;
+	background: #F7F8F9;
+	position: relative;
 }
 .catalog_menu_content {
 	border: none;
@@ -767,7 +778,7 @@ a:hover {
 	outline: none;
 }
 .section {
-	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .section_title {
 	position: relative;
@@ -886,6 +897,58 @@ a:hover {
 		opacity: 0;
 		transform: scale3d(1.2, 1.2, 1);
 	}
+}
+/* catalog */
+.catalog_content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.catalog_content_top {
+	width: 20%;
+}
+.catalog_content_tovar {
+	width: 80%;
+}
+.page_content .container_block {
+	width: 33.3333%;
+	margin-bottom: 16px;
+}
+.breadcrumb {
+	padding-top: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	border-bottom: 1px solid #E5E5E5;
+}
+.breadcrumb a {
+	font-size: 14px;
+	color: #202020;
+	opacity: 0.99;
+	position: relative;
+	margin-right: 8px;
+}
+.breadcrumb a:hover {
+	color: #039AE4;
+}
+.breadcrumb img {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.catalog_banner {
+	width: 100%;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-bottom: 16px;
+}
+.catalog_banner_img {
+	box-shadow: 0px 5px 10px rgba(3, 154, 228, 0.3);
+}
+.catalog_banner img {
+	width: 100%;
 }
 @media (min-width: 1060x) {
 	.footer_block:first-child ul {
@@ -1070,6 +1133,9 @@ a:hover {
 		background-position: center;
 		background-image: url(img/burger.png);
 		cursor: pointer;
+	}
+	.mobile_burger.hover {
+		background-image: url(img/burger_close.png);
 	}
 	.header_bottom .container {
 		max-width: 100%;
