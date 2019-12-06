@@ -1060,6 +1060,12 @@ a:hover {
 .page_content {
 	padding-bottom: 64px;
 }
+.catalog_more_content .tovar_2_content {
+	border-bottom: 1px solid #F7F8F9;
+}
+.catalog_more_content .tovar_2_content:last-child {
+	border-bottom: none;
+}
 .tovar_2_content {
 	display: flex;
 	flex-direction: row;
@@ -1309,6 +1315,9 @@ a:hover {
 .page_title {
 	border-top: 1px solid #E5E5E5;
 }
+.tovar_tabs {
+	border-bottom: 1px solid #F7F8F9;
+}
 .tovar_tabs_scroll {
 	border-bottom: 1px solid #F7F8F9;
 }
@@ -1357,6 +1366,38 @@ a:hover {
 	font-size: 18px;
 	color: #202020;
 	margin-bottom: 0;
+}
+.catalog_more_text {
+  width: 271px;
+  border-right: 1px solid #F7F8F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	padding: 40px;
+}
+.catalog_more_text a {
+	font-size: 14px;
+	color: #039AE4;
+}
+.catalog_more_text h5 {
+  font-size: 24px;
+  color: #202020;
+  display: flex;
+  flex-direction: row;
+	margin: 0;
+}
+.catalog_more_text h5 span {
+  font-size: 12px;
+  padding-left: 5px;
+}
+.catalog_more {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-bottom: 8px solid #F7F8F9;
+}
+.catalog_more_content {
+	flex: 1;
 }
 .mobile_filter, .catalog_sort_mobile {
 	display: none;
