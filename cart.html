@@ -1,0 +1,952 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Рослек | Моя корзина</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/foundation/css/foundation.min.css">
+	<link rel="stylesheet" href="vendor/foundation/css/app.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="vendor/owl/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper pager">
+		<header>
+			<div class="header_wrap">
+				<div class="top_header_content">
+					<div class="container">
+						<div class="top_header_inner">
+							<div class="header_top_menu">
+								<ul>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Как оформить заказ</a></li>
+									<li><a href="#">Адреса аптек</a></li>
+									<li><a href="#" data-toggle="dropdown_more">Информация <img src="img/arrow_bottom.svg" alt=""></a></li>
+								</ul>
+							</div>
+							<!-- выпадающие верхнее дополнительное меню -->
+							<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="dropdown_more" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+								<ul>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Пользовательское соглашение</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Обмен, возврат и ремонт</a></li>
+									<li><a href="#">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+
+							<div class="header_account_inner">
+								<ul>
+									<li><a href="#"><img src="img/plus.svg" alt=""> Мои бонусы</a></li>
+									<li><a href="#" data-toggle="header_join">Вход</a></li>
+									<li><a href="#" data-toggle="header_reg">Регистрация</a></li>
+								</ul>
+								<!-- авторизация выпадающее -->
+								<div class="dropdown-pane dropdown_login" id="header_join" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+									<div class="dropdown_login_content">
+										<h3>Авторизация</h3>
+										<div class="dropdown_login_input">
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Номер телефона">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="password" name="" value="" placeholder="Пароль">
+												<a href="#">Забыли пароль?</a>
+											</div>
+											<input type="submit" name="" value="Войти">
+											<p>Еще нет аккаунта? <a href="#" data-toggle="header_reg">Зарегистрируйтесь</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- регистрация выпадающее -->
+								<div class="dropdown-pane dropdown_reg" id="header_reg" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+									<div class="dropdown_login_content">
+										<h3>Регистрация</h3>
+										<div class="dropdown_login_input">
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Фамилия">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Имя">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Отчество">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="Номер телефона">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="text" name="" value="" placeholder="E-mail">
+												<a href="#">Необязательно</a>
+											</div>
+											<div class="dropdown_login_block">
+												<input type="password" name="" value="" placeholder="Пароль">
+											</div>
+											<div class="dropdown_login_block">
+												<input type="password" name="" value="" placeholder="Повторите пароль">
+											</div>
+											<input type="submit" name="" value="Войти">
+											<p>Уже есть аккаунт? <a href="#" data-toggle="header_join">Авторизуйтесь</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="top_mobile_content">
+								<a href="" class="mobile_logo">
+									<img src="img/logo_white.png" alt="">
+								</a>
+								<div class="header_log">
+									<a href="#" class="header_login red" data-toggle="header_join">
+										<div class="header_login_img">
+											<img src="img/login.png" alt="">
+										</div>
+										<span>Вход</span>
+									</a>
+									<span class="header_top_line">|</span>
+									<a href="#" class="header_reg red" data-toggle="header_reg">
+										<span>Регистрация</span>
+									</a>
+									<a href="#" class="burger_mobile" data-toggle="header_mobile">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container header_center">
+					<div class="top_center_inner">
+						<div class="logo">
+							<a href="#"><img src="img/logo.png" alt="Roslek"></a>
+						</div>
+
+						<div class="header_info_inner">
+							<div class="header_info">
+								<a href="#" data-toggle="header_phone">
+									<div class="header_info_img">
+										<img src="img/top_phone.png" alt="">
+									</div>
+									<div class="header_info_desc">
+										<span>8 800 800-80-80 <img src="img/arrow_bottom.svg" alt=""></span>
+										<p>Заказать звонок</p>
+									</div>
+								</a>
+								<!-- выпадающие номер телефона -->
+								<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="header_phone" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+									<ul>
+										<li><a href="#">8 800 800-80-80</a></li>
+										<li><a href="#">8 800 800-80-80</a></li>
+										<li><a href="#">8 800 800-80-80</a></li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="header_info header_info_2">
+								<a href="#" data-toggle="header_city">
+									<div class="header_info_img">
+										<img src="img/top_city.png" alt="">
+									</div>
+									<div class="header_info_desc">
+										<span>Якутск <img src="img/arrow_bottom.svg" alt=""></span>
+										<p>Город</p>
+									</div>
+								</a>
+								<!-- выпадающие города -->
+								<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="header_city" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+									<ul>
+										<li><a href="#">Якутск</a></li>
+										<li><a href="#">Якутск</a></li>
+										<li><a href="#">Якутск</a></li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="header_info">
+								<a href="#" data-toggle="header_address">
+									<div class="header_info_img">
+										<img src="img/top_address.png" alt="">
+									</div>
+									<div class="header_info_desc">
+										<span>Дзержинского, 34 <img src="img/arrow_bottom.svg" alt=""></span>
+										<p>Адрес аптеки</p>
+									</div>
+								</a>
+								<!-- выпадающие города -->
+								<div class="dropdown-pane dropdown_menu dropdown_menu_phone dropdown_list" id="header_address" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+									<ul>
+										<li><a href="#">Орджоникидзе, 2</a></li>
+										<li><a href="#">Петра Алексеева 72/1</a></li>
+										<li><a href="#">Дзержинского, 34</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div><!--top header end-->
+
+				</div>
+				<div class="header_bottom">
+					<div class="container">
+						<div class="bottom_header_inner">
+
+							<!-- мобильный header -->
+							<div class="mobile_header">
+								<button data-toggle="mobile_menu" class="mobile_burger" type="button" name="button"></button>
+								<a href="#" class="mobile_logo">
+									<img src="img/mobile_logo.png" alt="">
+								</a>
+								<button data-toggle="mobile_search" class="mobile_loop" type="button" name="button"></button>
+							</div>
+
+							<!-- выпадающее мобильный поиск -->
+							<div class="mobile_search_inner dropdown-pane" id="mobile_search" data-dropdown data-auto-focus="true" data-close-on-click="true">
+								<form class="" action="index.html" method="post">
+									<input type="search" name="" value="" placeholder="Введите запрос поиска">
+								</form>
+							</div>
+							<!-- выпадающее мобильное меню -->
+							<div class="mobile_menu_inner dropdown-pane" id="mobile_menu" data-dropdown data-auto-focus="true" data-close-on-click="true">
+								<div class="mobile_menu">
+									<ul class="vertical menu drilldown" data-drilldown data-back-button='<li class="js-drilldown-back"><a tabindex="0">Назад</a></li>'>
+										<li>
+											<a href="#">Каталог товаров</a>
+											<ul class="menu vertical nested">
+									      <li>
+													<a href="#" class="catalog_menu_title">Книги</a>
+													<ul class="menu vertical nested">
+														<li><a href="#">Детские издания</a></li>
+														<li><a href="#">Для досуга и творчества</a></li>
+														<li><a href="#">Художественная литература</a></li>
+														<li><a href="#">Нехудожественная литература</a></li>
+														<li><a href="#">Краеведческая литература</a></li>
+													</ul>
+												</li>
+									      <li>
+													<a href="#" class="catalog_menu_title">Учебные издания</a>
+													<ul class="menu vertical nested">
+														<li><a href="#">Детские издания</a></li>
+														<li><a href="#">Для досуга и творчества</a></li>
+														<li><a href="#">Художественная литература</a></li>
+														<li><a href="#">Нехудожественная литература</a></li>
+														<li><a href="#">Краеведческая литература</a></li>
+													</ul>
+												</li>
+									      <li>
+													<a href="#" class="catalog_menu_title">Игрушки и игры</a>
+													<ul class="menu vertical nested">
+														<li><a href="#">Детские издания</a></li>
+														<li><a href="#">Для досуга и творчества</a></li>
+														<li><a href="#">Художественная литература</a></li>
+														<li><a href="#">Нехудожественная литература</a></li>
+														<li><a href="#">Краеведческая литература</a></li>
+													</ul>
+												</li>
+									      <li>
+													<a href="#" class="catalog_menu_title">Подарки, сувениры и букбоксы</a>
+													<ul class="menu vertical nested">
+														<li><a href="#">Детские издания</a></li>
+														<li><a href="#">Для досуга и творчества</a></li>
+														<li><a href="#">Художественная литература</a></li>
+														<li><a href="#">Нехудожественная литература</a></li>
+														<li><a href="#">Краеведческая литература</a></li>
+													</ul>
+												</li>
+									    </ul>
+										</li>
+										<li>
+											<a href="#">Личный кабинет</a>
+										</li>
+										<li>
+											<a href="#">Издательство</a>
+										</li>
+										<li>
+											<a href="#">Услуги</a>
+										</li>
+										<li>
+											<a href="#">Магазины</a>
+										</li>
+										<li>
+											<a href="#">Новости и события</a>
+										</li>
+										<li>
+											<a href="#">Оплата и доставка</a>
+										</li>
+										<li>
+											<a href="#">Контакты</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- выпадающее каталог -->
+							<div class="header_menu_inner">
+								<button data-toggle="catalog_menu"><img src="img/catalog.svg" alt=""><span>Каталог товаров</span><img src="img/catalog_arrow.svg" alt=""></button>
+
+								<!-- класс is-open только на главной -->
+								<div class="dropdown-pane dropdown_menu_panel" id="catalog_menu" data-dropdown data-auto-focus="false" data-force-follow="false" data-close-on-click-inside="false">
+									<div class="vertical dropdown menu catalog_menu" data-dropdown-menu>
+										<ul class="catalog_menu_inner vertical menu nested">
+											<li>
+												<a href="#">Лекарственные препараты</a>
+												<ul class="catalog_menu_content">
+													<div class="catalog_menu_block">
+														<ul>
+															<li class="catalog_menu_title"><a href="#">Беременным и кормящим</a></li>
+															<li><a href="#">Бандажи до и послеродовые</a></li>
+															<li><a href="#">Белье до и послеродовые</a></li>
+															<li><a href="#">Вкладыши и прокладки</a></li>
+															<li><a href="#">Контейнеры для хранения молока</a></li>
+															<li><a href="#">Косметика и уход</a></li>
+															<li><a href="#">Молокоотсосы</a></li>
+															<li><a href="#">Питание для мам</a></li>
+															<li class="catalog_menu_title"><a href="#">Детское питание</a></li>
+															<li><a href="#">Вода</a></li>
+															<li><a href="#">Каши</a></li>
+															<li><a href="#">Смеси</a></li>
+															<li><a href="#">Соки и напитки</a></li>
+															<li><a href="#">Чай для малышей</a></li>
+															<li class="catalog_menu_title"><a href="#">Детская гигиена и уход</a></li>
+															<li><a href="#">Ежедневный уход</a></li>
+															<li><a href="#">Защитная косметика</a></li>
+															<li><a href="#">Присыпки для малышей</a></li>
+															<li class="catalog_menu_title"><a href="#">Все для кормления детей</a></li>
+															<li><a href="#">Бутылочки для кормления</a></li>
+															<li><a href="#">Нагрудники, слюнявчики</a></li>
+															<li><a href="#">Поильники</a></li>
+															<li><a href="#">Посуда для кормления</a></li>
+															<li><a href="#">Соски</a></li>
+															<li><a href="#">Термоконтейнеры</a></li>
+															<li class="catalog_menu_title"><a href="#">Пустышки, прорезыватели и игрушки</a></li>
+															<li class="catalog_menu_title"><a href="#">Для купания</a></li>
+															<li><a href="#">Аксессуары для купания (горки, стульчики, термометры и т.д.)</a></li>
+															<li><a href="#">Средства для купания</a></li>
+															<li><a href="#">Шампуни для детей</a></li>
+															<li class="catalog_menu_title"><a href="#">Подгузники и пеленки</a></li>
+															<li><a href="#">Клеёнки</a></li>
+															<li><a href="#">Пеленки</a></li>
+															<li><a href="#">Подгузники</a></li>
+															<li><a href="#">Трусики</a></li>
+															<li class="catalog_menu_title"><a href="#">Прочие товары</a></li>
+															<li><a href="#">Радионяни</a></li>
+														</ul>
+													</div>
+												</ul>
+											</li>
+											<li>
+												<a href="#">БАД</a>
+												<ul class="catalog_menu_content">
+													<div class="catalog_menu_block">
+														<ul>
+															<li class="catalog_menu_title"><a href="#">Беременным и кормящим</a></li>
+															<li><a href="#">Бандажи до и послеродовые</a></li>
+															<li><a href="#">Белье до и послеродовые</a></li>
+															<li><a href="#">Вкладыши и прокладки</a></li>
+															<li><a href="#">Контейнеры для хранения молока</a></li>
+															<li><a href="#">Косметика и уход</a></li>
+															<li><a href="#">Молокоотсосы</a></li>
+															<li><a href="#">Питание для мам</a></li>
+															<li class="catalog_menu_title"><a href="#">Детское питание</a></li>
+															<li><a href="#">Вода</a></li>
+															<li><a href="#">Каши</a></li>
+															<li><a href="#">Смеси</a></li>
+															<li><a href="#">Соки и напитки</a></li>
+															<li><a href="#">Чай для малышей</a></li>
+															<li class="catalog_menu_title"><a href="#">Детская гигиена и уход</a></li>
+															<li><a href="#">Ежедневный уход</a></li>
+															<li><a href="#">Защитная косметика</a></li>
+															<li><a href="#">Присыпки для малышей</a></li>
+															<li class="catalog_menu_title"><a href="#">Все для кормления детей</a></li>
+															<li><a href="#">Бутылочки для кормления</a></li>
+															<li><a href="#">Нагрудники, слюнявчики</a></li>
+															<li><a href="#">Поильники</a></li>
+															<li><a href="#">Посуда для кормления</a></li>
+															<li><a href="#">Соски</a></li>
+															<li><a href="#">Термоконтейнеры</a></li>
+															<li class="catalog_menu_title"><a href="#">Пустышки, прорезыватели и игрушки</a></li>
+															<li class="catalog_menu_title"><a href="#">Для купания</a></li>
+															<li><a href="#">Аксессуары для купания (горки, стульчики, термометры и т.д.)</a></li>
+															<li><a href="#">Средства для купания</a></li>
+															<li><a href="#">Шампуни для детей</a></li>
+															<li class="catalog_menu_title"><a href="#">Подгузники и пеленки</a></li>
+															<li><a href="#">Клеёнки</a></li>
+															<li><a href="#">Пеленки</a></li>
+															<li><a href="#">Подгузники</a></li>
+															<li><a href="#">Трусики</a></li>
+															<li class="catalog_menu_title"><a href="#">Прочие товары</a></li>
+															<li><a href="#">Радионяни</a></li>
+														</ul>
+													</div>
+												</ul>
+											</li>
+											<li><a href="#">Медицинские изделия</a></li>
+											<li><a href="#">Медтехника</a></li>
+											<li><a href="#">Гигиена</a></li>
+											<li><a href="#">Мама и малыш</a></li>
+											<li><a href="#">Косметика</a></li>
+											<li><a href="#">Здоровое питание</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="header_search">
+								<form class="search_block" action="">
+									<input class="search_area" type="text" name="q" value="" autocomplete="off" placeholder="Поиск по каталогу">
+									<input type="submit" name="" value="">
+								</form>
+							</div>
+
+							<a href="#" class="header_cart">
+								<img src="img/cart.svg" alt="">
+								<span>2</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main_inner">
+			<div class="main_wrap">
+				<div class="page_top">
+					<div class="container">
+						<div class="breadcrumb_inner">
+							<div class="breadcrumb">
+								<a href="#">Главная</a> <img src="img/breadcrumb_arrow.png" alt=""> <a href="#">Личный кабинет</a> <img src="img/breadcrumb_arrow.png" alt=""> <span>Моя корзина</span>
+							</div>
+						</div>
+						<div class="page_title">
+							<h1>Моя корзина</h1>
+						</div>
+					</div>
+				</div>
+				<div class="page_content">
+					<div class="container">
+						<div class="page_inner">
+							<div class="page_sidebar">
+								<div class="cart_menu">
+									<ul>
+										<li><a href="#">Мои данные</a></li>
+										<li><a href="#">Мои заказы</a></li>
+										<li class="active"><a href="#">Моя корзина</a></li>
+										<li class="logout"><a href="#">Завершить сеанс</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="page_main">
+								<div class="cart_main">
+									<div class="cart_main_name">
+										<ul>
+											<li>Товары</li>
+											<li>Цена</li>
+											<li>Кол-во</li>
+											<li>Сумма</li>
+										</ul>
+									</div>
+									<div class="cart_main_block">
+										<div class="cart_main_block_title">
+											<a href="#" class="cart_main_block_img">
+												<img src="img/cart_tovar_1.png" alt="">
+											</a>
+											<div class="cart_main_block_name">
+												<a href="#">Нурофен лонг 0,2+0,5 N12 Табл П/Плен/Оболоч</a>
+											</div>
+										</div>
+										<div class="cart_main_one">
+											<span>416 ₽</span>
+										</div>
+										<div class="cart_main_col">
+											<div class="input-group plus-minus-input">
+												<div class="input-group-button">
+													<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+														<div class="minus_ico"></div>
+													</button>
+												</div>
+												<input class="input-group-field" type="number" name="quantity" min="1" value="1">
+												<div class="input-group-button">
+													<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+														<div class="plus_ico"></div>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="cart_main_sum">
+											<span>416</span>₽
+										</div>
+										<div class="cart_main_del">
+											<button type="button" name="button"></button>
+										</div>
+									</div>
+									<div class="cart_main_block">
+										<div class="cart_main_block_title">
+											<a href="#" class="cart_main_block_img">
+												<img src="img/cart_tovar_1.png" alt="">
+											</a>
+											<div class="cart_main_block_name">
+												<a href="#">Нутрилак premium соя смесь сухая специализированная на основе изолята соевого белка 350г</a>
+											</div>
+										</div>
+										<div class="cart_main_one">
+											<span>416 ₽</span>
+										</div>
+										<div class="cart_main_col">
+											<div class="input-group plus-minus-input">
+												<div class="input-group-button">
+													<button type="button" class="minus" data-quantity="minus" data-field="quantity">
+														<div class="minus_ico"></div>
+													</button>
+												</div>
+												<input class="input-group-field" type="number" name="quantity" min="1" value="1">
+												<div class="input-group-button">
+													<button type="button" class="plus" data-quantity="plus" data-field="quantity">
+														<div class="plus_ico"></div>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="cart_main_sum">
+											<span>416</span>₽
+										</div>
+										<div class="cart_main_del">
+											<button type="button" name="button"></button>
+										</div>
+									</div>
+									<div class="cart_main_end">
+										<div class="cart_main_end_text">
+											<span>Все товары в вашем заказе резервируются в аптеке на 24 часа</span>
+										</div>
+										<div class="cart_main_end_sum">
+											<div class="cart_main_end_sum_1">
+												<div class="tovar_bonus_img">
+													<img src="img/plus.svg" alt="">
+												</div>
+												<span>10 бонусов</span>
+											</div>
+											<div class="cart_main_end_sum_2">
+												<span>Сумма заказа</span>
+												<span class="main_price">1 696 ₽</span>
+											</div>
+											<button type="button" name="button">Оформить заказ</button>
+										</div>
+									</div>
+								</div>
+								<section class="recomend section">
+									<div class="section_title">
+										<h2>Рекомендуем</h2>
+									</div>
+									<div class="container_row popular_slider owl-carousel owl-theme">
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" data-toggle="apteka_10">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_10" data-dropdown data-auto-focus="true"  data-close-on-click-inside="false">
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_11">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_11" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<div class="tovar_meta">
+														<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+														<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+													</div>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_12">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_12" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>1 522 ₽</span>
+														<span class="price_delete">1 922 ₽</span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_13">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_13" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<div class="tovar_meta">
+														<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+														<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+													</div>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_15">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_15" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>1 522 ₽</span>
+														<span class="price_delete">1 922 ₽</span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_16">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_16" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<div class="tovar_meta">
+														<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+														<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+													</div>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_17">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_17" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>1 522 ₽</span>
+														<span class="price_delete">1 922 ₽</span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_18">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_18" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer_wrap">
+				<div class="container">
+					<div class="footer_inner">
+						<div class="footer_block">
+							<ul class="footer_bottom_menu menu vertical" id="footer_menu" data-responsive-menu="small-accordion">
+								<li class="has-submenu">
+									<a href="#" class="submenu_title">Каталог товаров</a>
+									<ul>
+										<li><a href="#" aria-label="">Лекарственные препараты</a></li>
+										<li><a href="#" aria-label="">БАД</a></li>
+										<li><a href="#" aria-label="">Медицинские изделия</a></li>
+										<li><a href="#" aria-label="">Медтехника</a></li>
+										<li><a href="#" aria-label="">Гигиена</a></li>
+										<li><a href="#" aria-label="">Мама и малыш</a></li>
+										<li><a href="#" aria-label="">Гигиена</a></li>
+										<li><a href="#" aria-label="">Здоровое питание</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<ul class="footer_bottom_menu menu vertical" data-responsive-menu="small-accordion">
+								<li class="has-submenu">
+									<a href="#" class="submenu_title">Компания</a>
+									<ul>
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Адреса аптек</a></li>
+										<li><a href="#">Вакансии</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer_block">
+							<ul class="footer_bottom_menu menu vertical" data-responsive-menu="small-accordion">
+								<li class="has-submenu">
+									<a href="#" class="submenu_title">Покупателям</a>
+									<ul>
+										<li><a href="#">Как оформить заказ</a></li>
+										<li><a href="#">Бонусная программа</a></li>
+										<li><a href="#">Личный кабинет</a></li>
+										<li><a href="#">Политика конфиденциальности</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer_copyright">
+					<div class="container">
+						<div class="footer_copyright_bottom">
+							<span>© 2019 Фармацевтическая фирма «Рослек»</span>
+							<div class="footer_copyright_bottom_block">
+								<span>Разработано в </span>
+								<a href="http://platforma.bz"><img src="img/platforma.png" alt="Разработка сайтов"></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="vendor/foundation/js/vendor/jquery.js"></script>
+		<script src="vendor/foundation/js/vendor/what-input.js"></script>
+		<script src="vendor/foundation/js/vendor/foundation.min.js"></script>
+		<script src="vendor/foundation/js/app.js"></script>
+		<script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+		<script src="vendor/owl/owl.carousel.min.js"></script>
+		<script src="vendor/main.js"></script>
+		<script type="text/javascript">
+		$('.popular_slider').owlCarousel({
+				nav:true,
+				navText:["<button type='button'><img src='img/arrow_left.svg'></button>","<button type='button'><img src='img/arrow_right.svg'></button>"],
+				touchDrag: false,
+				item: 1,
+				mouseDrag: false,
+				responsive:{
+						1:{
+								items:1
+						},
+						568:{
+								items:1
+						},
+						620:{
+								items:2
+						},
+						1060:{
+								items:3
+						},
+				}
+		});
+		$(window).on('load resize', function() {
+			if ($(window).width() < 1060) {
+				$(".dropdown_menu_panel").removeClass("is-open");
+				$(".dropdown_menu_panel").addClass("dropdown-pane");
+			} else {
+				$(".dropdown_menu_panel").removeClass("is-open");
+				$(".catalog_menu").addClass("is-open");
+			}
+			if ($(window).width() > 620) {
+				$('.footer_bottom_menu ul').css( "display", "flex" );
+				$('.footer_bottom_menu').removeClass('accordion-menu');
+				$( ".footer_bottom_menu" ).removeAttr( "data-accordion-menu" );
+				$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
+			}
+		});
+		$(document).ready(function(){
+			// мобильная сортировка
+			$("#mobile_catalog_sort ul li").on("click", function() {
+				var text = $(this).text();
+				$("#mobile_catalog_sort_button span").text(text);
+				$('#mobile_catalog_sort').foundation('close');
+			});
+			// выбор аптеки в товарах
+			$(".apteka_name").on("click", function() {
+				var p = $(this).text();
+				var tovar = $(this).parents(".dropdown_toggle");
+				var tovar2 = $(this).parents(".tovar_top");
+
+				$(tovar).find(".tovar_apteka").text(p);
+				$(tovar).find(".tovar_apteka").addClass("changed");
+				$(tovar).find(".dropdown_apteka").removeClass("is-open");
+				$(tovar).find(".tovar_apteka").removeClass("notselected");
+
+				$(tovar2).find(".tovar_apteka").text(p);
+				$(tovar2).find(".tovar_apteka").addClass("changed");
+				$(tovar2).find(".dropdown_apteka").removeClass("is-open");
+				$(tovar2).find(".tovar_apteka").removeClass("notselected");
+			});
+
+			// затемнение при открытии
+			$('#mobile_search').on('show.zf.dropdown', function() {
+			  $('.main_inner').addClass('shadow');
+			});
+			$('#mobile_search').on('hide.zf.dropdown', function() {
+			  $('.main_inner').removeClass('shadow');
+			});
+			//скрыть текст
+			$("#hide_text_toggle").on("click", function(){
+				$('.hide_text').show();
+				$('#hide_text_toggle').hide();
+			});
+			// анимация при нажатии корзины в товарах
+			$(".tovar_add_cart").on("click", function(){
+				var tovar = $(this).parents(".dropdown_toggle");
+				var name = $(this).find(".tovar_add_cart_name");
+				if ($(tovar).find(".tovar_apteka").hasClass("notselected")) {
+					$(tovar).find(".tovar_apteka").addClass("alert");
+				} else {
+					$(this).addClass("loading").delay(800).queue(function(next){
+				    $(this).removeClass("loading");
+						$(this).addClass("added");
+						$(name).text("Товар в корзине!");
+				    next();
+					});
+				}
+			});
+
+			// анимация при нажатии корзины в товарах
+			$(".tovar_bot button").on("click", function(){
+				var tovar = $(this).parents(".tovar_content");
+				if ($(tovar).find(".tovar_apteka").hasClass("notselected")) {
+					$(tovar).find(".tovar_apteka").addClass("alert");
+				} else {
+					$(this).addClass("loading").delay(800).queue(function(next){
+				    $(this).removeClass("loading");
+						$(this).addClass("added");
+				    next();
+					});
+				}
+			});
+			//корзина
+			$('.cart_main_del button').on("click", function(){
+				var tovar = $(this).parents(".cart_main_block");
+				$(tovar).hide();
+			});
+		});
+		</script>
+	</div>
+</body>
+
+</html>
