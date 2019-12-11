@@ -5,11 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Рослек | Адреса аптек</title>
+	<title>Рослек | Каталог</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.min.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
-	<link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="vendor/owl/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -419,110 +418,321 @@
 					<div class="container">
 						<div class="breadcrumb_inner">
 							<div class="breadcrumb">
-								<a href="#">Главная</a> <img src="img/breadcrumb_arrow.png" alt=""> <a href="#">Компания</a> <img src="img/breadcrumb_arrow.png" alt=""> <span>Адреса аптек</span>
+								<a href="#">Главная</a> <img src="img/breadcrumb_arrow.png" alt=""> <a href="#">Каталог товаров</a> <img src="img/breadcrumb_arrow.png" alt=""> <a href="#">Мама и малыш</a> <img src="img/breadcrumb_arrow.png" alt=""> <span>Детское питание</span>
 							</div>
 						</div>
 						<div class="page_title">
-							<h1>Адреса аптек</h1>
+							<h1>Детское питание</h1>
 						</div>
 					</div>
 				</div>
 				<div class="page_content">
 					<div class="container">
-						<div class="page_inner address_map_inner">
-							<div class="page_sidebar">
-								<div class="cart_menu">
-									<ul>
-										<li><a href="#">О компании</a></li>
-										<li class="active"><a href="#">Адреса аптек</a></li>
-										<li><a href="#">Вакансии</a></li>
-									</ul>
-								</div>
+						<div class="search_text">
+							<p>По вашему запросу “<span class="blue">Крем</span>” было найдено 24 товара</p>
+						</div>
+					</div>
+					<div class="container">
+						<div class="catalog_inner">
+							<div class="catalog_sidebar">
+
 							</div>
-							<div class="page_main">
-								<div class="address_inner">
-									<div class="address_menu">
-										<ul class="vertical menu accordion-menu" data-accordion-menu>
-										  <li>
-										    <a href="#" class="address_toggle">Аптеки в <span class="blue">Якутске</span></a>
-										    <ul class="menu vertical nested is-active">
-										      <li>
-														<a href="#" id="maps_toggle_1" onclick="setCenter();">
-														Петровского, 8/1<br>
-														<span>Закрыто до 08:00</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_2" onclick="setBounds();">
-														Петра Алексеева, 62а<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_3" onclick="setTypeAndPan();">
-														Дзержинского, 34<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-										    </ul>
-										  </li>
-											<li>
-										    <a href="#" class="address_toggle">Аптеки в <span class="blue">Москве</span></a>
-										    <ul class="menu vertical nested is-active">
-										      <li>
-														<a href="#" id="maps_toggle_1" onclick="setCenter();">
-														Петровского, 8/1<br>
-														<span>Закрыто до 08:00</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_2" onclick="setBounds();">
-														Петра Алексеева, 62а<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_3" onclick="setTypeAndPan();">
-														Дзержинского, 34<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_1" onclick="setCenter();">
-														Петровского, 8/1<br>
-														<span>Закрыто до 08:00</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_1" onclick="setCenter();">
-														Петра Алексеева, 62а<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_1" onclick="setCenter();">
-														Дзержинского, 34<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_1" onclick="setCenter();">
-														Дзержинского, 34<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" id="maps_toggle_1" onclick="setCenter();">
-														Дзержинского, 34<br>
-														<span>Круглосуточно</span>
-														</a>
-													</li>
-										    </ul>
-										  </li>
-										</ul>
+							<div class="catalog_content">
+								<div class="catalog_content_top">
+									<div class="catalog_sort_inner">
+										<a href="#" class="mobile_filter" data-toggle="mobile_catalog_filter">
+											<div class="catalog_nav_sort_img">
+												<img src="img/filter_mobile.png" alt="">
+											</div>
+											<span>Показать фильтр</span>
+										</a>
+										<!-- выпадающее мобильный фильтр -->
+										<div class="dropdown-pane" id="mobile_catalog_filter" data-dropdown data-auto-focus="true" data-close-on-click="true">
+											тут будет фильтр
+										</div>
+										<div class="catalog_sort_left">
+											<span>Сортировать по</span>
+											<ul>
+												<div class="catalog_sort_img">
+													<img src="img/sort.svg" alt="">
+												</div>
+												<li class="active"><a href="#">цене</a></li>
+												<li><a href="#">дате</a></li>
+												<li><a href="#">популярности</a></li>
+											</ul>
+										</div>
+										<div class="catalog_sort_mobile">
+											<button data-toggle="mobile_catalog_sort" id="mobile_catalog_sort_button">
+												<div class="catalog_sort_img">
+													<img src="img/sort.svg" alt="">
+												</div>
+												<span>по популярности</span>
+											</button>
+
+											<!-- выпадающее мобильная сортировка -->
+											<div class="dropdown-pane mobile_catalog_sort" id="mobile_catalog_sort" data-dropdown data-auto-focus="true" data-close-on-click="true">
+												<ul>
+													<li>по цене</li>
+													<li>по дате</li>
+													<li>по популярности</li>
+												</ul>
+											</div>
+										</div>
 									</div>
-									<div class="address_map">
-										<div id="map"></div>
+								</div>
+								<div class="catalog_content_tovar">
+									<div class="container_row">
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" data-toggle="apteka_1">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_1" data-dropdown data-auto-focus="true"  data-close-on-click-inside="false">
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button" data-tooltip tabindex="1" title="Fancy word for a beetle." data-position="top" data-alignment="right"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_2">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_2" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<div class="tovar_meta">
+														<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+														<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+													</div>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_3">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_3" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>1 522 ₽</span>
+														<span class="price_delete">1 922 ₽</span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+
+										<div class="catalog_banner">
+											<div class="catalog_banner_img">
+												<img src="img/banner.png" alt="">
+											</div>
+										</div>
+
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_4">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_4" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<div class="tovar_meta">
+														<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+														<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+													</div>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_5">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_5" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>1 522 ₽</span>
+														<span class="price_delete">1 922 ₽</span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_6">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_6" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<div class="tovar_meta">
+														<div class="tovar_meta_procent"><img src="img/procent.png" alt=""></div>
+														<div class="tovar_meta_hit"><img src="img/hit.png" alt=""></div>
+													</div>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_7">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_7" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>1 522 ₽</span>
+														<span class="price_delete">1 922 ₽</span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+										<div class="container_block">
+											<div class="tovar_content">
+												<div class="tovar_top">
+													<span class="tovar_brend">Аванта ОАО</span>
+													<a href="#" class="tovar_img" style="background-image:url(img/tovar1.png)"></a>
+													<button class="tovar_apteka notselected" type="button" data-toggle="apteka_8">Выберите аптеку</button>
+													<div class="dropdown-pane dropdown_apteka" id="apteka_8" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside>
+														<ul>
+															<li><button class="apteka_name" type="button">Орджоникидзе, 2</button></li>
+															<li><button class="apteka_name" type="button">Петра Алексеева, 72/1</button></li>
+															<li><button class="apteka_name" type="button">ТЦ “Туймаада”, 2 этаж</button></li>
+															<li><button class="apteka_name" type="button">Вилюйский тр. 2/1</button></li>
+														</ul>
+													</div>
+													<a href="#"><h3>Крем детский для ежедневного ухода за атопичной кожей Atopic(Атопик) 100 мл.</h3></a>
+													<span class="tovar_cat">Крем</span>
+												</div>
+												<div class="tovar_bot">
+													<div class="tovar_price">
+														<span>319</span>
+														<span class="price_delete"></span>
+													</div>
+													<button type="button"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog_nav">
+									<div class="catalog_next">
+										<button type="button" name="button"><img src="img/more.png" alt=""> Показать еще</button>
+									</div>
+									<div class="catalog_nav_pag">
+										<ul>
+											<span>Страницы</span>
+											<li><a href="#"><img src="img/arrow_left.png" alt=""></a></li>
+											<li><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li class="catalog_nav_pag_mobile"><a href="#">4</a></li>
+											<li class="catalog_nav_pag_mobile"><a href="#">5</a></li>
+											<li class="catalog_nav_pag_mobile"><a href="#">6</a></li>
+											<li class="catalog_nav_pag_mobile"><a href="#">7</a></li>
+											<li class="catalog_nav_pag_mobile"><a href="#">8</a></li>
+											<li class="catalog_nav_pag_mobile"><a href="#">9</a></li>
+											<li class="catalog_nav_pag_mobile"><a href="#">10</a></li>
+											<li><a href="#">...</a></li>
+											<li><a href="#">15</a></li>
+											<li><a href="#"><img src="img/arrow_right.png" alt=""></a></li>
+										</ul>
 									</div>
 								</div>
 							</div>
@@ -595,102 +805,9 @@
 		<script src="vendor/foundation/js/vendor/what-input.js"></script>
 		<script src="vendor/foundation/js/vendor/foundation.min.js"></script>
 		<script src="vendor/foundation/js/app.js"></script>
-		<script src="vendor/fancybox/jquery.fancybox.min.js"></script>
 		<script src="vendor/owl/owl.carousel.min.js"></script>
-		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		<script src="vendor/main.js"></script>
 		<script type="text/javascript">
-		// карта
-		ymaps.ready(init);
-
-var myMap;
-
-function init () {
-    // Параметры карты можно задать в конструкторе.
-    myMap = new ymaps.Map(
-        // ID DOM-элемента, в который будет добавлена карта.
-        'map',
-        // Параметры карты.
-        {
-            // Географические координаты центра отображаемой карты.
-            center: [62.032056, 129.726874],
-            // Масштаб.
-            zoom: 13
-        }, {
-            // Поиск по организациям.
-            searchControlProvider: 'yandex#search'
-		}),
-        myPlacemark = new ymaps.Placemark([62.024246, 129.716565], {
-            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-            // balloonContentHeader: "Балун метки",
-            // balloonContentBody: "Содержимое <em>балуна</em> метки",
-            // balloonContentFooter: "Подвал",
-            // hintContent: "Хинт метки"
-        }),
-		myPlacemark2 = new ymaps.Placemark([62.042185, 129.727040], {
-            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-            // balloonContentHeader: "Балун метки",
-            // balloonContentBody: "Содержимое <em>балуна</em> метки",
-            // balloonContentFooter: "Подвал",
-            // hintContent: "Хинт метки"
-        }),
-		myPlacemark3 = new ymaps.Placemark([62.046680, 129.740317], {
-            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-            // balloonContentHeader: "Балун метки",
-            // balloonContentBody: "Содержимое <em>балуна</em> метки",
-            // balloonContentFooter: "Подвал",
-            // hintContent: "Хинт метки"
-        });
-		myMap.geoObjects.add(myPlacemark);
-		myMap.geoObjects.add(myPlacemark2);
-		myMap.geoObjects.add(myPlacemark3);
-		}
-		function setCenter () {
-			// myPlacemark2.balloon.open();
-			myMap.setZoom(16);
-			myMap.panTo([62.024246, 129.716565], {
-		            // Задержка между перемещениями.
-		            delay: 1500
-		        });
-			var d = document.getElementById("maps_toggle_1");
-			var c = document.getElementById("maps_toggle_2");
-			var b = document.getElementById("maps_toggle_3");
-			d.className += " active";
-			c.classList.remove("active");
-			b.classList.remove("active");
-
-		}
-
-		function setBounds () {
-			// myPlacemark.balloon.open();
-			myMap.setZoom(16);
-			myMap.panTo([62.042185, 129.727040], {
-		            // Задержка между перемещениями.
-		            delay: 1500
-		        });
-			var d = document.getElementById("maps_toggle_1");
-			var c = document.getElementById("maps_toggle_2");
-			var b = document.getElementById("maps_toggle_3");
-			c.className += " active";
-			d.classList.remove("active");
-			b.classList.remove("active");
-		}
-
-		function setTypeAndPan () {
-			// myPlacemark3.balloon.open();
-			myMap.setZoom(16);
-			myMap.panTo([62.046680, 129.740317], {
-		            // Задержка между перемещениями.
-		            delay: 1500
-		        });
-			var d = document.getElementById("maps_toggle_1");
-			var c = document.getElementById("maps_toggle_2");
-			var b = document.getElementById("maps_toggle_3");
-			b.className += " active";
-			c.classList.remove("active");
-			d.classList.remove("active");
-
-		}
 		$(window).on('load resize', function() {
 			if ($(window).width() < 1060) {
 				$(".dropdown_menu_panel").removeClass("is-open");
@@ -716,18 +833,11 @@ function init () {
 			// выбор аптеки в товарах
 			$(".apteka_name").on("click", function() {
 				var p = $(this).text();
-				var tovar = $(this).parents(".dropdown_toggle");
-				var tovar2 = $(this).parents(".tovar_top");
-
+				var tovar = $(this).parents(".tovar_top");
 				$(tovar).find(".tovar_apteka").text(p);
 				$(tovar).find(".tovar_apteka").addClass("changed");
 				$(tovar).find(".dropdown_apteka").removeClass("is-open");
 				$(tovar).find(".tovar_apteka").removeClass("notselected");
-
-				$(tovar2).find(".tovar_apteka").text(p);
-				$(tovar2).find(".tovar_apteka").addClass("changed");
-				$(tovar2).find(".dropdown_apteka").removeClass("is-open");
-				$(tovar2).find(".tovar_apteka").removeClass("notselected");
 			});
 
 			// затемнение при открытии
@@ -737,27 +847,6 @@ function init () {
 			$('#mobile_search').on('hide.zf.dropdown', function() {
 			  $('.main_inner').removeClass('shadow');
 			});
-			//скрыть текст
-			$("#hide_text_toggle").on("click", function(){
-				$('.hide_text').show();
-				$('#hide_text_toggle').hide();
-			});
-			// анимация при нажатии корзины в товарах
-			$(".tovar_add_cart").on("click", function(){
-				var tovar = $(this).parents(".dropdown_toggle");
-				var name = $(this).find(".tovar_add_cart_name");
-				if ($(tovar).find(".tovar_apteka").hasClass("notselected")) {
-					$(tovar).find(".tovar_apteka").addClass("alert");
-				} else {
-					$(this).addClass("loading").delay(800).queue(function(next){
-				    $(this).removeClass("loading");
-						$(this).addClass("added");
-						$(name).text("Товар в корзине!");
-				    next();
-					});
-				}
-			});
-
 			// анимация при нажатии корзины в товарах
 			$(".tovar_bot button").on("click", function(){
 				var tovar = $(this).parents(".tovar_content");
@@ -770,11 +859,6 @@ function init () {
 				    next();
 					});
 				}
-			});
-			//корзина
-			$('.cart_main_del button').on("click", function(){
-				var tovar = $(this).parents(".cart_main_block");
-				$(tovar).hide();
 			});
 		});
 		</script>

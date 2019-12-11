@@ -1943,7 +1943,7 @@ input[type=number] {
 .vakansii_block button:hover {
   background: #039AE4;
 }
-.address_menu .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+.address_menu .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a.address_toggle::after {
   width: 16px;
 	height: 16px;
 	background-image: url(img/arrow_bottom.svg);
@@ -1954,7 +1954,7 @@ input[type=number] {
   position: absolute;
 	top: 17px;
   margin-top: -0;
-  right: 100px;
+  right: 90px;
 }
 .address_menu {
 	background: #fff;
@@ -1975,6 +1975,13 @@ input[type=number] {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+}
+.address_menu ul > li > ul > li a.active {
+	background: #008FD5;
+	color: #fff;
+}
+.address_menu ul > li > ul > li a.active span {
+	color: #fff;
 }
 .address_menu ul > li > ul > li a::after {
 	position: absolute;
@@ -2014,6 +2021,44 @@ input[type=number] {
   background-color: #039AE4;
   outline: 1px solid slategrey;
 }
+#map {
+	width: 100%;
+  height: 616px;
+}
+.address_page_toggle {
+	color: #999999;
+	padding: 16px 24px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #F7F8F9
+}
+.address_page_toggle img {
+	margin-right: 4px;
+}
+.address_page_inner ul {
+	padding: 0 24px;
+	display: flex;
+	flex-direction: column;
+}
+.address_page_inner ul li {
+	border-bottom: 1px solid #F7F8F9;
+	padding: 16px 0;
+}
+.address_page_inner ul li span {
+	color: #999999;
+	padding-top: 4px;
+	display: flex;
+}
+.address_page_inner ul li:last-child {
+	border: none;
+}
+.address_page_inner ul > li > a {
+	border: none!important;
+	padding: 0!important;
+	color: #039AE4;
+	display: flex;
+	margin-bottom: 6px;
+}
 .mobile_filter, .catalog_sort_mobile, .mobile {
 	display: none;
 }
@@ -2029,6 +2074,9 @@ input[type=number] {
 	}
 	.tovar_add_cart span {
     padding: 17px 15px;
+	}
+	.address_menu .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a.address_toggle::after {
+		right: 63px;
 	}
 }
 @media (max-width: 1060px) {
@@ -2541,6 +2589,29 @@ input[type=number] {
 	.cart_main_end_sum_2::before {
     top: 15px;
 	}
+	.address_inner {
+		flex-direction: column;
+	}
+	.address_map {
+		order: 1;
+		width: 100%;
+	}
+	.address_menu {
+		order: 2;
+		width: 100%;
+	}
+	.address_menu .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a.address_toggle::after {
+		right: 18px;
+	}
+	.address_map_inner .page_sidebar {
+		padding-bottom: 0;
+	}
+	#map {
+		height: 400px;
+	}
+	.address_page_inner {
+		height: auto;
+	}
 	.catalog_banner, .cart_main_name, .catalog_sort_left span, .cart_main_one {
 		display: none;
 	}
@@ -2548,6 +2619,12 @@ input[type=number] {
 @media (max-width: 620px) {
 	.container {
 		max-width: 420px;
+	}
+	.address_page_toggle {
+		padding: 16px;
+	}
+	.address_page_inner ul {
+		padding: 0 16px;
 	}
 	.data_inner {
 		margin: 0;
@@ -2782,6 +2859,17 @@ input[type=number] {
 	}
 	.vakansii_title {
 		flex-direction: column;
+	}
+	.search_text {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	#map {
+		height: 320px;
+	}
+	.address_map_inner .page_main {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.vakansii_title h4 {
 		margin-bottom: 6px;
