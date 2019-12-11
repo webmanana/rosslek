@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Рослек | Мои данные</title>
+	<title>Рослек | Регистрация</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.min.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
@@ -419,11 +419,11 @@
 					<div class="container">
 						<div class="breadcrumb_inner">
 							<div class="breadcrumb">
-								<a href="#">Главная</a> <img src="img/breadcrumb_arrow.png" alt=""> <a href="#">Личный кабинет</a> <img src="img/breadcrumb_arrow.png" alt=""> <span>Мои данные</span>
+								<a href="#">Главная</a> <img src="img/breadcrumb_arrow.png" alt=""> <a href="#">Личный кабинет</a> <img src="img/breadcrumb_arrow.png" alt=""> <span>Регистрация</span>
 							</div>
 						</div>
 						<div class="page_title">
-							<h1>Мои данные</h1>
+							<h1>Регистрация</h1>
 						</div>
 					</div>
 				</div>
@@ -433,46 +433,57 @@
 							<div class="page_sidebar">
 								<div class="cart_menu">
 									<ul>
-										<li class="active"><a href="#">Мои данные</a></li>
+										<li><a href="#">Мои данные</a></li>
 										<li><a href="#">Мои заказы</a></li>
-										<li><a href="#">Моя корзина</a></li>
-										<li class="logout"><a href="#">Завершить сеанс</a></li>
+										<li class="active"><a href="#">Моя корзина</a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="page_main">
 								<div class="cart_zakaz">
 									<div class="cart_zakaz_title">
-										<ul>
-											<li  class="active"><a href="#">Мои данные</a></li>
-											<li><a href="#">Сменить пароль</a></li>
-										</ul>
+										<h3>Регистрация</h3>
+										<p>Пожалуйста заполните поля анкеты</p>
 									</div>
-									<div class="data_inner">
+									<div class="data_inner login_reg_top">
 										<div class="data_block">
 											<input type="text" id="data_text_1" name="" value="" required>
 											<label for="data_text_1" class="floating_label">Фамилия</label>
 										</div>
 										<div class="data_block">
-											<input type="text" id="data_text_2" name="" value="">
+											<input type="text" id="data_text_2" name="" value="" required>
 											<label for="data_text_2" class="floating_label">Имя</label>
 										</div>
 										<div class="data_block">
-											<input type="text" id="data_text_3" name="" value="">
+											<input type="text" id="data_text_3" name="" value="" required>
 											<label for="data_text_3" class="floating_label">Отчество</label>
 										</div>
 										<div class="data_block">
-											<input type="text" id="data_text_4" name="" value="">
+											<input type="text" id="data_text_4" name="" value="" required>
 											<label for="data_text_4" class="floating_label">E-Mail</label>
+											<a href="#">Необязательно</a>
 										</div>
 										<div class="data_block">
-											<input type="text" id="data_text_5" name="" value="">
+											<input type="text" id="data_text_5" name="" value="" required>
 											<label for="data_text_5" class="floating_label">Номер телефона</label>
 										</div>
-										<div class="data_button">
-											<button type="button" name="button">Сохранить</button>
-											<button type="button" name="button">Отменить</button>
+									</div>
+									<div class="data_inner login_reg_bot">
+										<div class="data_block">
+											<input type="password" id="data_text_5" name="" value="" required>
+											<label for="data_text_5" class="floating_label">Пароль</label>
 										</div>
+										<div class="data_block">
+											<input type="password" id="data_text_5" name="" value="" required>
+											<label for="data_text_5" class="floating_label">Повторите пароль</label>
+										</div>
+										<div class="data_button">
+											<button type="button" name="button">Зарегистрироваться</button>
+										</div>
+									</div>
+									<div class="login_text">
+										Если вы уже зарегистрированы на сайте, то пожлуйста авторизуйтесь<br>
+										<a href="#">Авторизоваться</a>
 									</div>
 								</div>
 							</div>

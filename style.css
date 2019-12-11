@@ -1816,18 +1816,203 @@ input[type=number] {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 16px;
+}
+.data_button button {
+	background: #008FD5;
+	box-shadow: 0px 5px 10px rgba(3, 154, 228, 0.3);
+	cursor: pointer;
+	color: #fff;
+	padding: 16px 24px;
+	margin-right: 16px;
+}
+.data_button button:hover {
+  background: #039AE4;
 }
 .data_block input:focus ~ .floating_label {
-  top: 0;
+  top: -2px;
   bottom: 10px;
   font-size: 11px;
 	opacity: 1;
 }
-input:not(:focus):valid + .floating-label {
-	top: 0;
+.data_block input:not(:focus):valid + .floating_label {
+	top: -2px;
   bottom: 10px;
   font-size: 11px;
 	opacity: 1;
+}
+.cart_zakaz_title h3 {
+	margin-top: 0;
+	padding: 24px 0 0 24px;
+	font-size: 16px;
+}
+.cart_zakaz_title p {
+	padding-left: 24px;
+}
+.login_text {
+	padding: 24px;
+	border-top: 1px solid #E5E5E5;
+}
+.login_text a {
+	color: #039AE4;
+	border-bottom: 1px solid #039AE4;
+}
+.login_text a:hover {
+	border: none;
+}
+.data_block a {
+	position: absolute;
+	right: 8px;
+	top: 16px;
+	color: #039AE4;
+	font-size: 12px;
+}
+.login_page_inner {
+	padding-top: 0;
+}
+.login_reg_top {
+	padding-bottom: 0;
+}
+.login_reg_bot {
+	padding-top: 0;
+}
+.vakansii_inner {
+	background: #fff;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.vakansii_top {
+	border-bottom: 1px solid #F7F8F9;
+	padding: 16px 24px;
+}
+.vakansii_top button {
+	cursor: pointer;
+}
+.vakansii_block {
+	padding: 24px;
+	border-bottom: 1px solid #F7F8F9;
+}
+.vakansii_title span {
+	font-size: 14px;
+	color: #999999;
+}
+.vakansii_title h4 {
+	margin-top: 0;
+	font-size: 14px;
+	font-weight: normal;
+	color: #039AE4;
+}
+.vakansii_title {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.vakansii_block ul {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	padding-bottom: 16px;
+}
+.vakansii_block ul li {
+	padding-bottom: 8px;
+	position: relative;
+}
+.vakansii_block ul li::before {
+	content: '';
+	position: absolute;
+	left: -30px;
+	top: 10px;
+	width: 16px;
+	height: 2px;
+	display: flex;
+	background: #E5E5E5;
+}
+.vakansii_block button {
+	font-size: 14px;
+	color: #FFFFFF;
+	box-shadow: 0px 5px 10px rgba(3, 154, 228, 0.3);
+	background: #008FD5;
+	padding: 16px 24px;
+	cursor: pointer;
+	margin-left: 30px;
+}
+.vakansii_block button:hover {
+  background: #039AE4;
+}
+.address_menu .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+  width: 16px;
+	height: 16px;
+	background-image: url(img/arrow_bottom.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+  border: none;
+  content: '';
+  position: absolute;
+	top: 17px;
+  margin-top: -0;
+  right: 100px;
+}
+.address_menu {
+	background: #fff;
+	width: 30%;
+	height: 616px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.address_menu ul li a {
+	display: flex;
+	padding: 16px 24px;
+}
+.address_menu ul > li > a {
+	border-bottom: 1px solid #F7F8F9;
+	padding: 16px 24px!important;
+}
+.address_menu ul > li > ul > li a {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.address_menu ul > li > ul > li a::after {
+	position: absolute;
+	right: 16px;
+	top: 30px;
+	width: 16px;
+	height: 16px;
+	content: '';
+	background-image: url(img/breadcrumb_arrow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.address_menu ul > li > ul > li a span {
+	color: #999999;
+	padding-top: 3px;
+}
+.address_menu ul > li > a span.blue {
+	padding-left: 6px;
+}
+.accordion-menu .nested.is-accordion-submenu {
+	margin: 0;
+}
+.address_map {
+	width: 70%;
+}
+.address_inner {
+	display: flex;
+	flex-direction: row;
+}
+.address_menu::-webkit-scrollbar {
+  width: 4px;
+}
+.address_menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #fff;
+}
+.address_menu::-webkit-scrollbar-thumb {
+  background-color: #039AE4;
+  outline: 1px solid slategrey;
 }
 .mobile_filter, .catalog_sort_mobile, .mobile {
 	display: none;
@@ -2364,17 +2549,53 @@ input:not(:focus):valid + .floating-label {
 	.container {
 		max-width: 420px;
 	}
+	.data_inner {
+		margin: 0;
+		padding: 0 16px 16px 16px;
+	}
+	.login_reg_top {
+		padding-bottom: 0;
+	}
+	.cart_zakaz_title p {
+		padding-left: 16px;
+	}
 	.container_2_block {
 		width: 100%;
 	}
 	.zakaz_button button {
 		width: 50%;
 	}
+	.data_block {
+		width: 100%;
+	}
+	.cart_zakaz_title h3 {
+		padding: 16px 0 0 16px;
+	}
+	.login_text {
+		padding: 16px;
+	}
+	.vakansii_top {
+		padding: 16px;
+	}
+	.vakansii_top .dropdown_menu_phone {
+		top: 53px!important;
+	}
+	.data_block {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.floating_label {
+    left: 0;
+	}
 	.page_content .container_block {
 		margin-bottom: 8px;
 		padding-left: 4px;
 		padding-right: 4px;
 		width: 100%;
+	}
+	.data_button {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.tabs_content h3 {
 		font-size: 16px;
@@ -2542,6 +2763,9 @@ input:not(:focus):valid + .floating-label {
 	.page_inner {
 		flex-direction: column;
 	}
+	.vakansii_block {
+		padding: 16px;
+	}
 	.mobile_filter span, .catalog_sort_left span, .catalog_sort_right, .catalog_sort_left, .cart_menu ul li.logout, .cart_zakaz_name {
 		display: none;
 	}
@@ -2552,6 +2776,25 @@ input:not(:focus):valid + .floating-label {
 	}
 	.cart_main_top {
 		border-bottom: 8px solid #F7F8F9;
+	}
+	.vakansii_top .dropdown_menu_phone {
+		left: 0!important;
+	}
+	.vakansii_title {
+		flex-direction: column;
+	}
+	.vakansii_title h4 {
+		margin-bottom: 6px;
+	}
+	.vakansii_title span {
+		padding-bottom: 8px;
+	}
+	.vakansii_block button {
+		margin-left: 0;
+	}
+	.login_page_inner button {
+		width: 100%;
+		margin: 0;
 	}
 	.mobile {
 		display: block;
