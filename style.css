@@ -1962,6 +1962,7 @@ input[type=number] {
 	height: 616px;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	position: relative;
 }
 .address_menu ul li a {
 	display: flex;
@@ -2027,13 +2028,49 @@ input[type=number] {
 }
 .address_page_toggle {
 	color: #999999;
-	padding: 16px 24px;
+	padding: 16px 24px!important;
 	display: flex;
 	align-items: center;
+	flex-direction: row!important;
 	border-bottom: 1px solid #F7F8F9
 }
 .address_page_toggle img {
 	margin-right: 4px;
+}
+.address_page_inner.is-closing {
+	-webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.address_page_inner {
+	position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: -1;
+  width: 100%;
+  background: #fefefe;
+  -webkit-transition: -webkit-transform .15s linear;
+  transition: -webkit-transform .15s linear;
+  transition: transform .15s linear;
+  transition: transform .15s linear,-webkit-transform .15s linear;
+	min-height: 100%;
+	background: #fff;
+}
+.address_page_inner a::after {
+	display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+.address_menu .is-accordion-submenu-parent {
+	position: inherit;
+}
+.address_page_inner.is-active {
+  z-index: 1;
+  display: block;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 .address_page_inner ul {
 	padding: 0 24px;
