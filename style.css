@@ -926,8 +926,38 @@ a:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+.subcategory__block {
+	padding-bottom: 24px;
+}
 .catalog_sidebar {
 	width: 272px;
+}
+.sub_arrow {
+	color: #039AE4;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 24px;
+}
+.subcategory__content {
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	padding: 20px 24px;
+	position: relative;
+}
+#subcategory__dropdown.show {
+	height: auto;
+}
+.subcategory__content ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 50px;
+	overflow: hidden;
+}
+.subcategory__content ul li {
+	padding-right: 16px;
+	padding-bottom: 12px;
 }
 .catalog_content_top {
 	background: #fff;
@@ -2113,6 +2143,59 @@ input[type=number] {
 .mobile_filter, .catalog_sort_mobile, .mobile {
 	display: none;
 }
+.catalog_category {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
+	padding: 24px 40px;
+}
+.catalog_category_block {
+	width: 33.3333%;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.catalog_category__inner {
+	background: #fff;
+}
+.catalog_category__title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 24px;
+}
+.category__title {
+	font-size: 18px;
+	color: #202020;
+}
+.catalog_category__img {
+	padding-right: 24px;
+}
+.catalog_category__img img {
+	max-width: 64px;
+  max-height: 64px;
+  border-radius: 50%;
+  display: flex;
+}
+.catalog_category__item {
+	padding-bottom: 24px;
+}
+.category_all {
+	color: #039AE4;
+	display: flex;
+	justify-content: flex-end;
+}
+.catalog_category__content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.catalog_category__content li {
+	padding-right: 16px;
+	padding-bottom: 16px;
+	display: flex;
+}
 @media (max-width: 1200px) {
 	.container {
 		max-width: 1024px;
@@ -2386,6 +2469,9 @@ input[type=number] {
 	}
 	.cart_thx_button button {
 		margin-right: 16px;;
+	}
+	.catalog_category_block {
+		width: 50%;
 	}
 	.catalog_next {
 		display: flex;
@@ -2670,6 +2756,14 @@ input[type=number] {
 @media (max-width: 620px) {
 	.container {
 		max-width: 420px;
+	}
+	.catalog_category_block {
+		width: 100%;
+		padding: 0;
+	}
+	.catalog_category {
+		margin: 0;
+		padding: 16px;
 	}
 	.address_page_toggle {
 		padding: 16px;
