@@ -258,6 +258,16 @@ a:hover {
   border: none;
   padding: 0;
 }
+.shadow-destkop::after {
+	content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  top: 0;
+  z-index: 11;
+}
 .shadow::after {
 	content: "";
   position: absolute;
@@ -370,8 +380,10 @@ a:hover {
 	padding: 0;
 	background: #fff;
 	width: 100%;
-	height: 524px;
 	box-shadow: none!important;
+}
+.static_catalog_menu {
+	height: 524px;
 }
 .dropdown_menu_panel {
 	border: none;
@@ -423,14 +435,14 @@ a:hover {
 .catalog_menu_block {
 	width: 864px;
   position: absolute;
-  height: 524px;
+	background: #fff;
 }
 .catalog_menu_block ul {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
-	height: 524px;
-	padding: 24px;
+	min-height: 524px;
+	padding: 0 24px;
 	background: #fff;
 }
 .catalog_menu_block ul li {
@@ -455,12 +467,10 @@ a:hover {
 	box-shadow: none!important;
 }
 .catalog_menu_title {
-	padding-bottom: 15px!important;
-}
-.catalog_menu_title a {
-	font-size: 16px;
+	font-size: 16px!important;
 	font-weight: bold;
 	color: #202020;
+	margin: 24px;
 }
 .catalog_menu_title a:hover {
 	color: #039AE4;
@@ -493,6 +503,10 @@ a:hover {
 /* banner */
 .banner_left {
 	width: 272px;
+	position: relative;
+}
+.dropdown-pane.is-open {
+	z-index: 111;
 }
 .banner_right {
 	flex: 1;
